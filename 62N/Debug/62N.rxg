@@ -1,0 +1,3 @@
+-cpu=rx600
+-output="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\Debug\62N.lib"
+-head=runtime,stdio,stdlib,string,new

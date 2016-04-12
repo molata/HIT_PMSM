@@ -127,6 +127,7 @@
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_CMT.c" "User" "AddFromPDG" 2 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_INTC.c" "User" "AddFromPDG" 2 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SCI.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SPI.c" "User" "AddFromPDG" 2 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62N.c" "User" "C source file" 2 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_out_fuc.c" "User" "C source file" 2 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_run_fuc.c" "User" "C source file" 2 
@@ -241,24 +242,25 @@
 "DefaultSession" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\DefaultSession.hsf" 0 
 [GENERAL_DATA_SESSION_DefaultSession]
 [OPTIONS_Debug_Renesas OptLinker]
-"Single Shot" "05b8c2edf2491d10" 6 
+"Single Shot" "00f8cc1cd9491d10" 7 
 [OPTIONS_Debug_Renesas RX Assembler]
-"Assembly source file" "06e734e4e4781d10" 5 
-"Linkage symbol file" "06e734e4e4781d10" 5 
+"Assembly source file" "06e734e4e4781d10" 6 
+"Linkage symbol file" "06e734e4e4781d10" 6 
 [OPTIONS_Debug_Renesas RX C/C++ Compiler]
-"C source file" "06e734e4e4781d10" 4 
-"C++ source file" "06e734e4e4781d10" 4 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "0802400800491d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RIIC\R_PG_I2C_C0.c" "0daf510800491d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C0.c" "0be8a10800491d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C1.c" "08bfe10800491d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C0.c" "05d8800800491d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C5.c" "02afc00800491d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C6.c" "00e8110800491d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SYSTEM\R_PG_Clock.c" "0b3bfff700491d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_CMT.c" "06f8320800491d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_INTC.c" "025d720800491d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SCI.c" "0ea1c20800491d10" 3 
+"C source file" "06e734e4e4781d10" 5 
+"C++ source file" "044acfdba3491d10" 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "01746ada83491d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RIIC\R_PG_I2C_C0.c" "02587bda83491d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C0.c" "0eacbbda83491d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C1.c" "0b730cda83491d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C0.c" "0e3baada83491d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C5.c" "0a9feada83491d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C6.c" "06f33bda83491d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SYSTEM\R_PG_Clock.c" "06822ada83491d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_CMT.c" "06654cda83491d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_INTC.c" "01578cda83491d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SCI.c" "0dabccda83491d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SPI.c" "0a721dda83491d10" 3 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62N.c" "0a5278a025881d10" 2 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_out_fuc.c" "0e793bb3d5b81d10" 3 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_run_fuc.c" "05a17bb3d5b81d10" 3 
@@ -325,16 +327,18 @@
 [OPTIONS_Debug_Renesas RX C/C++ Library Generator]
 "Single Shot" "06e734e4e4781d10" 1 
 [OPTIONS_Debug_Renesas RX Configurator]
-"Single Shot" "04d1f2f700491d10" 7 
+"Single Shot" "04c63eca83491d10" 8 
 [OPTIONS_Debug]
 "" 0 
 "[S|OUTPUTPATH|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] [V|VERSION|1] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|LANG|C] [B|RUNTIME|1] [B|CTYPE|0] [B|MATH|0] [B|MATHF|0] [B|STDARG|0] [B|STDIO|1] [B|STDLIB|1] [B|STRING|1] [B|IOS|0] [B|NEW|1] [B|COMPLEX|0] [B|CPPSTRING|0] [S|MODE|BUILD/CHANGED]" 1 
-"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON4] [S|OUTPUTPATH|^"$(CONFIGDIR)^"] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 7 
-"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 5 
-"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24]" 4 
+"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON4] [S|OUTPUTPATH|^"$(CONFIGDIR)^"] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 8 
+"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 6 
+"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24]" 5 
 "[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|INCLUDE|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src^"]" 3 
 "[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|INCLUDE|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62NPDG\i_src^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src^"]" 2 
-"[V|VERSION|6] [B|DEBUG|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).abs^"] [B|LIST|1] [S|LIST|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [B|OPTIMIZE|0] [S|ROM|(D,R)|(D_1,R_1)|(D_2,R_2)] [S|ENDIAN|LITTLE] [S|FORM|STYPE] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] [S|START|B_1,R_1,B_2,R_2,B,R,SU,SI(1000)|PResetPRG(FFFF8000)|C_1,C_2,C,C$*,D_1,D_2,D,P,PIntPRG,W*,L(FFFF8100)|FIXEDVECT(FFFFFFD0)] [S|INPUTLIBRARY|^"C:\Renesas\PDG2\lib\RX62N\RX62N_library_LQFP_100.lib^"]" 6 
+"[V|VERSION|1] [S|LANG|CPP] [B|SJIS|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|DEBUG|1] [B|SIZE|1] [B|MAP|0] [I|INLINE|100] [I|LOOP|2] [S|MISRA2004|ALL] [S|MISRA2004RULEFILE|^"$(CONFIGDIR)\$(PROJECTNAME).rde^"] [S|CPU|RX600] [S|BASE|00000000=NONE] [I|PID|16]
+" 4 
+"[V|VERSION|6] [S|INPUTLIBRARY|^"C:\Renesas\PDG2\lib\RX62N\RX62N_library_LQFP_100.lib^"] [S|PRELINK|SKIP] [S|FORM|STYPE] [S|BYTE_COUNT_VALUE|FF] [B|DEBUG|1] [S|ROM|(D,R)|(D_1,R_1)|(D_2,R_2)] [S|CRC|NONE|DEFAULT|00000000] [B|LIST|1] [S|LIST|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [S|SHOW|METHODCUSTOM|] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] [I|SPACE|^"FF^"] [B|OPTIMIZE|0] [S|START|P,C,C$DSEC,C$BSEC,C_1,C_2,W_1,W_2,D,W,D_2,D_1,C$VECT,L(00)|B_1,R_1,B_2,R_2,B,R,SI(010000)|PResetPRG(0FFFF8000)|FIXEDVECT(0FFFFFFD0)] [S|MEMORY|HIGH]" 7 
 [EXCLUDED_FILES_Debug]
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
@@ -363,6 +367,12 @@
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
@@ -393,24 +403,25 @@
 [LINKAGE_ORDER_Debug]
 [GENERAL_DATA_CONFIGURATION_Debug]
 [OPTIONS_Release_Renesas OptLinker]
-"Single Shot" "0c7353f700491d10" 4 
+"Single Shot" "04c63eca83491d10" 5 
 [OPTIONS_Release_Renesas RX Assembler]
-"Assembly source file" "06e734e4e4781d10" 3 
-"Linkage symbol file" "06e734e4e4781d10" 3 
+"Assembly source file" "06e734e4e4781d10" 4 
+"Linkage symbol file" "06e734e4e4781d10" 4 
 [OPTIONS_Release_Renesas RX C/C++ Compiler]
 "C source file" "06e734e4e4781d10" 2 
-"C++ source file" "06e734e4e4781d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "0ad3d2e700491d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RIIC\R_PG_I2C_C0.c" "0778f9e700491d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C0.c" "0373cbe700491d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C1.c" "00e09de700491d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C0.c" "06de94e700491d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C5.c" "0f7266e700491d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C6.c" "099828e700491d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SYSTEM\R_PG_Clock.c" "00cd01e700491d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_CMT.c" "0cdb5fe700491d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_INTC.c" "076421f700491d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SCI.c" "04d1f2f700491d10" 2 
+"C++ source file" "044acfdba3491d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "082f3cba83491d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RIIC\R_PG_I2C_C0.c" "05c363ca83491d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C0.c" "03a335ca83491d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C1.c" "0e2cf6ca83491d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C0.c" "02450eba83491d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C5.c" "0dcdcfba83491d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C6.c" "085691ca83491d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SYSTEM\R_PG_Clock.c" "086a6aba83491d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_CMT.c" "0a27c8ca83491d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_INTC.c" "06229aca83491d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SCI.c" "05746cca83491d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SPI.c" "04c63eca83491d10" 2 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62N.c" "06e734e4e4781d10" 2 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_out_fuc.c" "087d515f75b81d10" 2 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_run_fuc.c" "087d515f75b81d10" 2 
@@ -477,14 +488,16 @@
 [OPTIONS_Release_Renesas RX C/C++ Library Generator]
 "Single Shot" "06e734e4e4781d10" 1 
 [OPTIONS_Release_Renesas RX Configurator]
-"Single Shot" "04d1f2f700491d10" 5 
+"Single Shot" "04c63eca83491d10" 6 
 [OPTIONS_Release]
 "" 0 
 "[S|OUTPUTPATH|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] [V|VERSION|1] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|LANG|C] [B|RUNTIME|1] [B|CTYPE|0] [B|MATH|0] [B|MATHF|0] [B|STDARG|0] [B|STDIO|1] [B|STDLIB|1] [B|STRING|1] [B|IOS|0] [B|NEW|1] [B|COMPLEX|0] [B|CPPSTRING|0] [S|MODE|BUILD/CHANGED]" 1 
-"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON4] [S|OUTPUTPATH|^"$(CONFIGDIR)^"] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 5 
-"[V|VERSION|1] [B|DEBUG|0] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 3 
+"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON4] [S|OUTPUTPATH|^"$(CONFIGDIR)^"] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 6 
+"[V|VERSION|1] [B|DEBUG|0] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 4 
 "[V|VERSION|1] [B|DEBUG|0] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24]" 2 
-"[V|VERSION|6] [B|DEBUG|0] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).abs^"]  [B|LIST|1] [S|LIST|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [B|OPTIMIZE|0] [S|ROM|(D,R)|(D_1,R_1)|(D_2,R_2)] [S|ENDIAN|LITTLE] [S|FORM|STYPE] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] [S|START|B_1,R_1,B_2,R_2,B,R,SU,SI(1000)|PResetPRG(FFFF8000)|C_1,C_2,C,C$*,D_1,D_2,D,P,PIntPRG,W*,L(FFFF8100)|FIXEDVECT(FFFFFFD0)]" 4 
+"[V|VERSION|1] [S|LANG|CPP] [B|SJIS|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|SIZE|1] [B|MAP|0] [I|INLINE|100] [I|LOOP|2] [S|MISRA2004|ALL] [S|MISRA2004RULEFILE|^"$(CONFIGDIR)\$(PROJECTNAME).rde^"] [S|CPU|RX600] [S|BASE|00000000=NONE] [I|PID|16]
+" 3 
+"[V|VERSION|6] [B|DEBUG|0] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).abs^"]  [B|LIST|1] [S|LIST|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [B|OPTIMIZE|0] [S|ROM|(D,R)|(D_1,R_1)|(D_2,R_2)] [S|ENDIAN|LITTLE] [S|FORM|STYPE] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] [S|START|B_1,R_1,B_2,R_2,B,R,SU,SI(1000)|PResetPRG(FFFF8000)|C_1,C_2,C,C$*,D_1,D_2,D,P,PIntPRG,W*,L(FFFF8100)|FIXEDVECT(FFFFFFD0)]" 5 
 [EXCLUDED_FILES_Release]
 [LINKAGE_ORDER_Release]
 [GENERAL_DATA_CONFIGURATION_Release]

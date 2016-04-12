@@ -9,7 +9,7 @@
 * Version      : 
 * Description  : 
 ******************************************************************************
-* History : 11.04.2016 Version Description
+* History : 12.04.2016 Version Description
 *         :   
 ******************************************************************************/
 
@@ -22,6 +22,7 @@ extern void Sci5TrFunc(void);
 extern void Sci5ReFunc(void);
 extern void Sci6TrFunc(void);
 extern void Sci6ReFunc(void);
+extern void Spi1IntFunc(void);
 
 
 

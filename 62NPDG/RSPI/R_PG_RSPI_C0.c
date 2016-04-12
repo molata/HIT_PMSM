@@ -36,7 +36,7 @@
 * Description  : 
 * Limitations  : 
 ******************************************************************************
-* History : 11.04.2016 Version Description
+* History : 12.04.2016 Version Description
 *         :   
 ******************************************************************************/
 
@@ -105,7 +105,7 @@ bool R_PG_RSPI_SetCommand_C0(void)
 	res = R_SPI_Command(
 		0,
 		0,
-		PDL_SPI_CLOCK_MODE_3 | PDL_SPI_DIV_1 | PDL_SPI_ASSERT_SSL0 | PDL_SPI_SSL_NEGATE | PDL_SPI_LENGTH_16 | PDL_SPI_MSB_FIRST,
+		PDL_SPI_CLOCK_MODE_3 | PDL_SPI_DIV_1 | PDL_SPI_ASSERT_SSL0 | PDL_SPI_SSL_NEGATE | PDL_SPI_LENGTH_16 | PDL_SPI_LSB_FIRST,
 		PDL_SPI_CLOCK_DELAY_MINIMUM | PDL_SPI_SSL_DELAY_MINIMUM | PDL_SPI_NEXT_DELAY_MINIMUM
 	);
 

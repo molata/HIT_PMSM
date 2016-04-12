@@ -28,7 +28,9 @@ void abort(void);
 void main(void)
 {
 	HIT_hardwaresetup();      // 硬件初始化
+	RSPI1.SPCR.BIT.SPE = 1;
 	RSPI0.SPCR.BIT.SPE = 1;
+	RSPI1.SPCMD0.BIT.SPB = 0X07;
 	//HIT_par_initial();        //参数初始化 
 	/***
 	PORTE.DDR.BIT.B6 = 0X01;

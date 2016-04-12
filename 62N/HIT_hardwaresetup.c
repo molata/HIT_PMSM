@@ -11,8 +11,10 @@ void HIT_hardwaresetup()
 	CMT0_setuo(); 
 	R_PG_RSPI_Set_C0();
 	R_PG_RSPI_SetCommand_C0();
+	R_PG_RSPI_Set_C1();
+	R_PG_RSPI_SetCommand_C1();
 	//spi_Setup();     // SPI启动
-	spi1_Setup();
+	//spi1_Setup();
 
 	//Exinterrupt_setup();  //  外部中断触发初始化
 }

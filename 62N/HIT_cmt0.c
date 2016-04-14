@@ -30,9 +30,9 @@ void Cmt0IntFunc()
 {
 /*******    SCIÖÐ¶Ï    **************/
 	//R_PG_SCI_StartSending_C6(ucTestSerial, 2);    /***  test for serial  ***/
-	//serial_loop();	
+	serial_loop();	
 	//laser_loop();
-
+/***
 	R_PG_RSPI_TransferAllData_C0(ucTestSerial, ucRecSerial, 1);	
 	R_PG_RSPI_StartTransfer_C1(ucTestSerial, ucRecLaser, 1);
 	if(ucRecLaser[0] == 0x55)
@@ -51,5 +51,5 @@ void Cmt0IntFunc()
 		R_PG_SCI_StartSending_C0(ucTestSerial, 2);
 		HIT_SPIRX = 1;
 	}
-	
+***/	
 }

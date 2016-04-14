@@ -22,7 +22,7 @@ uchar ucSerial_shake_send_dataBits[2] = {2, 0};   // 发送的数据： 握手指令
 uchar ucSerial_shake_send_bytes[6] = {0};      // 握手的所有字节数组
 uchar ucSerial_send_dataBits[22] = {0};        // 发送的数据：工作的六个角度
 uchar ucSerial_send_bytes[26] = {0};           // 正常工作所有的字节数组
-uchar ucSerial_rec_bytes[5] = {0};    //从上位机获取的握手信息
+uchar ucSerial_rec_bytes[16] = {0};    //从上位机获取的握手信息
 
 uchar ucLaser_query_bytes[16] = {0};    // 激光板发送的所有字节
 uchar ucLaser_query_datas[12] = {0};    // 激光板发送的所有数据 
@@ -32,6 +32,14 @@ uchar ucLaser_rec_bytes_len = 0;
 uchar ucSerial_tests[2] = {0x55, 0xAA};
 void Sci6ReFunc()
 {
+	if(SCI6.SSR.BIT.FER)
+	{
+		SCI6.SSR.BIT.FER = 0;
+	}
+	if (SCI6.SSR.BIT.ORER)
+	{
+		SCI6.SSR.BIT.ORER = 0;
+	}
 }
 void Sci6TrFunc()
 {
@@ -44,9 +52,16 @@ void Sci0TrFunc()
 }
 /****************** 串口的解析中断 *****************/
 void serial_loop()
-{     		
-	uiRec_bytes_num = 5;
-	//R_PG_SCI_GetSentDataCount_C6(&ucRecBytes_len);
+{     
+	if(ucShake_success == 0)
+	{
+		uiRec_bytes_num = 5;
+	}else if(ucShake_success == 1)	
+	{
+		uiRec_bytes_num = 5;
+	}
+	
+	R_PG_SCI_GetSentDataCount_C6(&ucRecBytes_len);
 	if(serial_receive(ucSerial_rec_bytes, uiRec_bytes_num))   // 串口接收
 	{
 		//serial_receive(ucSerial_rec_bytes, uiRec_bytes_num);
@@ -141,19 +156,21 @@ void laser_send(uchar *ucArrData, uchar ucBytes_len)
 }
 
 /********************* 串口接收 **********************************/
-bool serial_receive(uchar * ucSerial_datas, uint uiCount){
+bool serial_receive(uchar *ucSerial_datas, uint uiCount){
 
 	bool blResult = 0;
 	int isCount = 0;
-	R_PG_SCI_StartReceiving_C6(ucSerial_datas, 5);
-	
-	for(isCount = 0 ; isCount < 5; isCount++)
+	R_PG_SCI_StartReceiving_C6(ucSerial_datas, uiCount);
+
+	for(isCount = 0 ; isCount < uiCount; isCount++)
 	{
 		if(ucSerial_datas[isCount] != 0)
 			blResult = 1;
 			break;	
 	}
+
 	return blResult;
+	//return 1;
 }
 /********************* 激光板串口接收 **********************************/
 bool laser_receive(uchar * ucSerial_datas, uint uiCount)

@@ -15,7 +15,6 @@ void HIT_hardwaresetup()
 	R_PG_RSPI_SetCommand_C1();
 	//spi_Setup();     // SPI启动
 	//spi1_Setup();
-
 	//Exinterrupt_setup();  //  外部中断触发初始化
 }
 

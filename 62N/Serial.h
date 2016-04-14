@@ -67,12 +67,6 @@ typedef struct {
 typedef struct {
 	uchar ucSerial_decode_status;     // 1. headline1; 2. headline2; 3. data length; 4. data 5. checkout
 	uchar ucSerial_data_length;    // data length
-	uchar ucSerial_dataBits[2];   // serial data has not decode
-}ST_SERIAL_SHAKE_DECODE;
-
-typedef struct {
-	uchar ucSerial_decode_status;     // 1. headline1; 2. headline2; 3. data length; 4. data 5. checkout
-	uchar ucSerial_data_length;    // data length
 	uchar ucSerial_cur_data_len;   //  当前已经接收到的数据的长度
 	uchar ucSerial_dataBits[12];   // serial data has not decode
 }ST_SERIAL_DECODE;

@@ -36,7 +36,7 @@
 * Description  : 
 * Limitations  : 
 ******************************************************************************
-* History : 13.04.2016 Version Description
+* History : 14.04.2016 Version Description
 *         :   
 ******************************************************************************/
 
@@ -180,7 +180,7 @@ bool R_PG_SCI_StartReceiving_C6(uint8_t * data, uint16_t count)
 		data,
 		count,
 		Sci6ReFunc,
-		PDL_NO_FUNC
+		Sci6ErFunc
 	);
 }
 

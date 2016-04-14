@@ -30,20 +30,7 @@ uchar ucLaser_rec_bytes[26] = {0};      // 激光板发送的数据
 uchar ucLaser_send_bytes_len = 0; 
 uchar ucLaser_rec_bytes_len = 0;
 uchar ucSerial_tests[2] = {0x55, 0xAA};
-void Sci6ReFunc()
-{
-	if(SCI6.SSR.BIT.FER)
-	{
-		SCI6.SSR.BIT.FER = 0;
-	}
-	if (SCI6.SSR.BIT.ORER)
-	{
-		SCI6.SSR.BIT.ORER = 0;
-	}
-}
-void Sci6TrFunc()
-{
-}
+
 void Sci0ReFunc()
 {
 }

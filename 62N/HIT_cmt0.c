@@ -1,10 +1,22 @@
 #include "iodefine.h"
+#include "typedefine.h"
+#include "Serial.h"
 //unsigned short HIT_oucnt = 0;
 unsigned char ucTestSerial[2] = {0xAA, 0x99};// 从波形上来看第一个字节是数组的最后一个数
 unsigned char ucRecSerial[2] = {0};
 unsigned char ucRecLaser[2] = {0};
 short HIT_SPIRX = 0;
 unsigned char over_run, mode_falt, parity_error;
+/**** 用以测试的状态量 ****/
+extern uchar ucShake_success;          // 握手是否成功的标志量
+extern uint uiRec_bytes_num;
+extern uchar ucSerial_rec_bytes[16];
+extern ST_SERIAL_DECODE stSerial_decode;
+unsigned char serial_Rec_Data;
+extern unsigned char ucSerial_rec_bytes[16];
+unsigned char ucBuffer_rec_bytes[16];
+unsigned int serial_Rec_Count = 0;
+unsigned char ucRec_Success = 0;
 void Spi1IntFunc()
 {
 /****
@@ -26,30 +38,71 @@ void Spi1IntFunc()
 	}
 		
 }
+void Sci6ReFunc()
+{
+	if(SCI6.SSR.BIT.FER)
+	{
+		SCI6.SSR.BIT.FER = 0;
+	}
+	if (SCI6.SSR.BIT.ORER)
+	{
+		SCI6.SSR.BIT.ORER = 0;
+	}
+}
+void Sci6TrFunc()
+{
+}
+void Sci6ErFunc()
+{
+	if(SCI6.SSR.BIT.FER)
+	{
+		SCI6.SSR.BIT.FER = 0;
+	}
+	if (SCI6.SSR.BIT.ORER)
+	{
+		SCI6.SSR.BIT.ORER = 0;
+	}
+} 
 void Cmt0IntFunc()
 {
-/*******    SCI中断    **************/
-	//R_PG_SCI_StartSending_C6(ucTestSerial, 2);    /***  test for serial  ***/
-	serial_loop();	
-	//laser_loop();
-/***
-	R_PG_RSPI_TransferAllData_C0(ucTestSerial, ucRecSerial, 1);	
-	R_PG_RSPI_StartTransfer_C1(ucTestSerial, ucRecLaser, 1);
-	if(ucRecLaser[0] == 0x55)
+	int iswape = 0;
+	if(SCI6.SSR.BIT.RDRF == 1)
 	{
-		shoucaoqi_loop();
-		PORTE.DR.BIT.B3 = !PORTE.DR.BIT.B3;
-		R_PG_SCI_StartSending_C6(ucTestSerial, 2);	
-		R_PG_SCI_StartSending_C0(ucTestSerial, 2);
-		HIT_SPIRX = 1;
+		serial_Rec_Data = SCI6.RDR;
+		SCI6.SSR.BIT.RDRF = 0;
+		ucBuffer_rec_bytes[serial_Rec_Count] = serial_Rec_Data;
+		serial_Rec_Count++;
+		if (ucShake_success == 0)
+		{
+			if(serial_Rec_Count == 5)
+			{
+				for(iswape = 0; iswape < 5; iswape++)
+				{
+					ucSerial_rec_bytes[iswape] = ucBuffer_rec_bytes[iswape];
+					ucRec_Success = 1;
+				}
+				serial_Rec_Count = 0;
+				uiRec_bytes_num = 5;
+			}
+			
+		}   // 握手未成功，只接收5个字节
+		if (ucShake_success == 1)
+		{
+			if(serial_Rec_Count == 16)
+			{
+				for(iswape = 0; iswape < 16; iswape++)
+				{
+					ucSerial_rec_bytes[iswape] = ucBuffer_rec_bytes[iswape];
+					ucRec_Success = 1;
+				}
+				serial_Rec_Count = 0;	
+				uiRec_bytes_num = 16;
+			}	
+		}
 	}
-	else if(ucRecLaser[1] == 0x55)
 	{
-		shoucaoqi_loop();
-		PORTE.DR.BIT.B3 = !PORTE.DR.BIT.B3;
-		R_PG_SCI_StartSending_C6(ucTestSerial, 2);	
-		R_PG_SCI_StartSending_C0(ucTestSerial, 2);
-		HIT_SPIRX = 1;
+	SCI6.SSR.BIT.ORER = 0;
 	}
-***/	
+	SCI6.SCR.BIT.RE = 0X01;
+	SCI6.SCR.BIT.RIE = 0X01;
 }

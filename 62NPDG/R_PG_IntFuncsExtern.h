@@ -9,19 +9,21 @@
 * Version      : 
 * Description  : 
 ******************************************************************************
-* History : 13.04.2016 Version Description
+* History : 14.04.2016 Version Description
 *         :   
 ******************************************************************************/
 
 
 
 extern void Cmt0IntFunc(void);
+extern void Cmt1IntFunc(void);
 extern void Sci0TrFunc(void);
 extern void Sci0ReFunc(void);
 extern void Sci5TrFunc(void);
 extern void Sci5ReFunc(void);
 extern void Sci6TrFunc(void);
 extern void Sci6ReFunc(void);
+extern void Sci6ErFunc(void);
 extern void Spi1IntFunc(void);
 
 

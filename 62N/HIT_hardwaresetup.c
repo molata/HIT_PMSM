@@ -24,7 +24,8 @@ void SCI_setup()    //初始化SCI
 	R_PG_SCI_Set_C0();
 	R_PG_SCI_Set_C5();
 	R_PG_SCI_Set_C6();   
-	
+	SCI6.SCR.BIT.RE = 0X01;
+	SCI6.SCR.BIT.TE = 0X01;
 }
 void Clock_setup()   //初始化时钟
 {

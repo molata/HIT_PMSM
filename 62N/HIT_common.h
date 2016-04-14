@@ -455,15 +455,10 @@ unsigned short HIT_new_angle_short;
 #define HIT_AD16WEI 65536
 
 /****************** 207程序通信相关 ********************************/
-uchar ucShake_success = 0;       // serial receive Loop status
 uchar ucLaser_success = 0;       // laser launch result feedback
 uchar ucCapture_success = 0;     // 指令捕获结果
-uchar ucSerial_send_status = 0;  // serial send Loop status 0: 什么都不发送； 1. 发送自检结果 ； 2. 发送检测结果
-uchar ucLaser_send_status = 0;   // Laser send loop status  0: 什么都不发送； 1. 发送自检指令；  2. 发送上位机的控制指令
 ST_SERIAL_DECODE stSerial_decode = {0};     //解析数据的结构体
 ST_SERIAL_DECODE stLaser_decode = {0};     //解析激光板的结构体
 ST_SERIAL_DATA stSerial_data = {0};       // 内部状态的结构体， 接收到其他传感器后，修改这个结构体就可以
 ST_PC_CMD st_pc_cmd = {0};                // 计算机指令
-uint u32Error_count = 0;              // 错误计数
-uint laser_time_count = 0;            // 定时计数器，1000个计数发送一次初始化 ， 10个计数发送一次查询
 #endif

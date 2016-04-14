@@ -117,8 +117,8 @@ void serial_build_protocol(uchar *ucSerial_dataBits, uchar *ucSerial_bytes , uch
 //void serial_decode(const uchar *ucSerial_rec_bits, ST_SERIAL_DECODE *stSerial_decode, uchar ucByte_len);
 void serial_decode(const uchar *ucSerial_rec_bits, ST_SERIAL_DECODE *stSerial_decode, uchar ucByte_len, uchar ucMac_type);   //ucMac_type: 0: PC; 1: Laser
 /********************* 串口接收 **********************************/
-bool serial_receive(uchar * ucSerial_data, const uint uiCount);
-bool laser_receive(uchar * ucSerial_datas, uint uiCount);
+void serial_receive_loop();
+void laser_receive_loop();
 /********************* laser 解析 ********************************/       // 后期需要删除
 
 /*************************************************

@@ -4,5 +4,6 @@
 void Cmt1IntFunc()
 {
 	serial_loop();
+	laser_loop();
 	
 }

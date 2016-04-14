@@ -6,45 +6,36 @@
 extern ST_SERIAL_DECODE stSerial_decode;     //解析上位机的结构体 
 extern ST_PC_CMD st_pc_cmd;              //计算器指令结构体，用于缓冲上位机的指令
 uchar ucSerial_rec_bytes[16] = {0};    //从上位机获取的握手信息
-uchar ucBuffer_rec_bytes[16] = {0};    //串口接收的缓冲数组
-extern uint u32Error_count;              // 错误计数
-extern uchar ucShake_success;          // 握手是否成功的标志量
-uchar ucRec_Success;    // 本次串口接收是否成功，only if ucRec_success == 1, 进行解析扫描
-uchar ucSerial_byte_len = 0;    // 上位机串口接收长度 5 or 16
-uchar serial_Rec_Count = 0;     // 接收数据位计数器， 0-16 or 0-5
+uchar ucSerial_buffer_rec_bytes[16] = {0};    //串口接收的缓冲数组
+uint u32Error_count = 0;              // 错误计数
+uchar ucShake_success = 0;       // serial receive Loop status
+uchar ucSerial_Rec_Success = 0;    // 本次串口接收是否成功，only if ucRec_success == 1, 进行解析扫描
+uchar uiSerial_rec_bytes_len = 0;    // 上位机串口接收长度 5 or 16
+uchar ucSerial_Rec_Count = 0;     // 接收数据位计数器， 0-16 or 0-5
 
 /**************** 上位机发送相关的数据结构 **********************/
 extern ST_SERIAL_DATA stSerial_data;     // 内部状态结构体
-extern uchar ucSerial_send_status;     // 判断到底要给上位机回复什么指令的控制位
-uint u32Package_count = 0;            // 包计数 
-
-
-extern ST_SERIAL_DECODE stLaser_decode;     // 解析激光板的结构体
-
-          
-
-
-extern uchar ucLaser_send_status;      // 判断到底要给激光板发送什么指令
-extern uchar ucLaser_success;          // 激光板测试是否成功
-
-
-
-          
-
-uchar ucDataBytes_Len = 0;                 // 接收的数据位长度   ？？ 需要修改的变量
-uchar ucRecBytes_len = 0;                  // 获取当前Buffer中的内存的数目
-
-uchar ucSerial_shake_send_dataBits[2] = {2, 0};   // 发送的数据： 握手指令
-uchar ucSerial_shake_send_bytes[6] = {0};      // 握手的所有字节数组
+uchar ucSerial_send_status = 0;  // serial send Loop status 0: 什么都不发送； 1. 发送自检结果 ； 2. 发送检测结果
 uchar ucSerial_send_dataBits[22] = {0};        // 发送的数据：工作的六个角度
 uchar ucSerial_send_bytes[26] = {0};           // 正常工作所有的字节数组
+uint u32Package_count = 0;            			// 包计数 
+uchar ucRerial_Send_Bytes_Len = 0;                 // 接收的数据位长度   ？？ 需要修改的变量
 
+/***************** 激光板接收相关的数据结构 *******************/
+extern ST_SERIAL_DECODE stLaser_decode;     // 解析激光板的结构体
+uchar ucLaser_rec_bytes[26] = {0};      // 接收激光板的数组
+uchar ucLaser_buffer_rec_bytes[26];     // 接收激光板的缓冲数组
+uchar ucLaser_Rec_Count = 0;                // 激光板接收的计数器
+uchar ucLaser_rec_bytes_len = 0;        // 接收激光板的数据长度         
+uchar ucLaser_rec_success = 0;          // 判断是否接收成功
+extern uchar ucLaser_success;          // 激光板测试是否成功
 
+/******************激光板发送相关的数据结构 *********************/
 uchar ucLaser_query_bytes[16] = {0};    // 激光板发送的所有字节
 uchar ucLaser_query_datas[12] = {0};    // 激光板发送的所有数据 
-uchar ucLaser_rec_bytes[26] = {0};      // 激光板发送的数据
 uchar ucLaser_send_bytes_len = 0;       // 向激光板发送的数据长度
-uchar ucLaser_rec_bytes_len = 0;        // 接收激光板的数据长度
+uchar ucLaser_send_status = 0;   // Laser send loop status  0: 什么都不发送； 1. 发送自检指令；  2. 发送上位机的控制指令
+uint laser_time_count = 0;            // 定时计数器，1000个计数发送一次初始化 ， 10个计数发送一次查询
 
 void Sci0ReFunc()
 {
@@ -54,14 +45,6 @@ void Sci0TrFunc()
 }
 void Sci6ReFunc()
 {
-	if(SCI6.SSR.BIT.FER)
-	{
-		SCI6.SSR.BIT.FER = 0;
-	}
-	if (SCI6.SSR.BIT.ORER)
-	{
-		SCI6.SSR.BIT.ORER = 0;
-	}
 }
 void Sci6TrFunc()
 {
@@ -77,30 +60,30 @@ void Sci6ErFunc()
 		SCI6.SSR.BIT.ORER = 0;
 	}
 } 
-/****************** 串口的接收扫描 *******************/
-void serial_rec_loop()
+/********************* 上位机接收扫描 **********************************/
+void serial_receive_loop()
 {
 	int iswape = 0;
 	if(SCI6.SSR.BIT.RDRF == 1)
 	{
-		ucBuffer_rec_bytes[serial_Rec_Count] = SCI6.RDR;
+		ucSerial_buffer_rec_bytes[ucSerial_Rec_Count] = SCI6.RDR;
 		SCI6.SSR.BIT.RDRF = 0;
-		serial_Rec_Count++;
-		if(ucBuffer_rec_bytes[2] == 0x01)   // 如果是一个字节，就是发送握手
+		ucSerial_Rec_Count++;
+		if(ucSerial_buffer_rec_bytes[2] == 0x01)   // 如果是一个字节，就是发送握手
 		{
-			uiRec_bytes_num = 5;
-		}else if(ucBuffer_rec_bytes[2] == 0x0C)  // 如果是16个字节，就是发送控制指令
+			uiSerial_rec_bytes_len = 5;
+		}else if(ucSerial_buffer_rec_bytes[2] == 0x0C)  // 如果是16个字节，就是发送控制指令
 		{
-			uiRec_bytes_num = 16;
+			uiSerial_rec_bytes_len = 16;
 		}
-		if(serial_Rec_Count == uiRec_bytes_num)
+		if(ucSerial_Rec_Count == uiSerial_rec_bytes_len)
 		{
-			for(iswape = 0; iswape < uiRec_bytes_num; iswape++)   // 将缓冲的数组数据放到接收数组中
+			for(iswape = 0; iswape < uiSerial_rec_bytes_len; iswape++)   // 将缓冲的数组数据放到接收数组中
 			{
-				ucSerial_rec_bytes[iswape] = ucBuffer_rec_bytes[iswape];
-				ucRec_Success = 1;
+				ucSerial_rec_bytes[iswape] = ucSerial_buffer_rec_bytes[iswape];
+				ucSerial_Rec_Success = 1;
 			}
-			serial_Rec_Count = 0;
+			ucSerial_Rec_Count = 0;
 		} // 握手未成功，只接收5个字节
 	} // 读写结束
 	
@@ -108,46 +91,78 @@ void serial_rec_loop()
 	SCI6.SCR.BIT.RE = 0X01;  // 手动接收使能
 	SCI6.SCR.BIT.RIE = 0X01; // 手动接收中断使能
 }
-/****************** 串口的解析扫描 *****************/
+/****************** 上位机接收的解析扫描 *****************/
 void serial_loop()
 {     
-	if(ucRec_Success == 1)
+	if(ucSerial_Rec_Success == 1)
 	{
-		serial_decode(ucSerial_rec_bytes, &stSerial_decode, uiRec_bytes_num, 0);
-		ucRec_Success = 0;
+		serial_decode(ucSerial_rec_bytes, &stSerial_decode, uiSerial_rec_bytes_len, 0);
+		ucSerial_Rec_Success = 0;
 	}
 	switch(ucSerial_send_status){          //串口发送
 		case 0:        //IDLE state
 				break;            
 		case 1:	  // shake with upper machine
-				SCI0.SCR.BYTE = 0x04;
-				ucDataBytes_Len = 2;
-				serial_build_protocol(ucSerial_shake_send_dataBits, ucSerial_shake_send_bytes, ucDataBytes_Len);  // 
-				serial_send(ucSerial_shake_send_bytes, ucDataBytes_Len+4);//R_PG_SCI_StartSending_C2(ucSerial_shake_send_bytes, 6);
-				/***
-				if (SCI0.SSR.BIT.ORER){
-					SCI0.SSR.BIT.ORER = 0;
-				}***/
+				ucRerial_Send_Bytes_Len = 2;   // 握手的时候只发送两个字节的数据
+				ucSerial_send_dataBits[0] = 0x02;
+				ucSerial_send_dataBits[1] = 0x00;
+				serial_build_protocol(ucSerial_send_dataBits, ucSerial_send_bytes, ucRerial_Send_Bytes_Len);  // 根据协议进行组帧
+				serial_send(ucSerial_send_bytes, ucRerial_Send_Bytes_Len+4);// 将数组发送出去
 				ucSerial_send_status = 0;
 				break;			
 		case 2:   // connection work 
 				if (ucShake_success){
-					SCI0.SCR.BYTE = 0x04;
 					u32Package_count++;
 					stSerial_data.package_count = u32Package_count;
-					ucDataBytes_Len = 22;
-					
-					serial_encode(stSerial_data, ucSerial_send_dataBits); 
-					serial_build_protocol(ucSerial_send_dataBits, ucSerial_send_bytes, ucDataBytes_Len);  // 
-					serial_send(ucSerial_send_bytes, ucDataBytes_Len+4);  
+					ucRerial_Send_Bytes_Len = 22;
+					serial_encode(stSerial_data, ucSerial_send_dataBits);    // 将当前的内部数据状态结构体，转换成数组
+					serial_build_protocol(ucSerial_send_dataBits, ucSerial_send_bytes, ucRerial_Send_Bytes_Len);  // 
+					serial_send(ucSerial_send_bytes, ucRerial_Send_Bytes_Len+4);  
 					ucSerial_send_status = 0;
-				
 				}
 				break;
 	}	
 }
+/********************* 激光板串口接收 **********************************/
+void laser_receive_loop()
+{
+	int iswape = 0;
+	if(SCI0.SSR.BIT.RDRF == 1)
+	{
+		ucLaser_buffer_rec_bytes[ucLaser_Rec_Count] = SCI0.RDR;
+		SCI0.SSR.BIT.RDRF = 0;
+		ucLaser_Rec_Count++;
+		if(ucLaser_buffer_rec_bytes[2] == 0x02)   // 如果是一个字节，就是发送握手
+		{
+			ucLaser_rec_bytes_len = 6;
+		}else if(ucLaser_buffer_rec_bytes[2] == 0x16)  // 如果是16个字节，就是发送控制指令
+		{
+			ucLaser_rec_bytes_len = 26;
+		}
+		if(ucLaser_Rec_Count == ucLaser_rec_bytes_len)
+		{
+			for(iswape = 0; iswape < ucLaser_rec_bytes_len; iswape++)   // 将缓冲的数组数据放到接收数组中
+			{
+				ucLaser_rec_bytes[iswape] = ucLaser_buffer_rec_bytes[iswape];
+				ucLaser_rec_success = 1;
+			}
+			ucLaser_Rec_Count = 0;
+		} // 握手未成功，只接收5个字节
+	} // 读写结束
+	
+	SCI0.SSR.BIT.ORER = 0;   // 溢出标志量，清零
+	SCI0.SCR.BIT.RE = 0X01;  // 手动接收使能
+	SCI0.SCR.BIT.RIE = 0X01; // 手动接收中断使能
+}
+/******************** 激光板发送扫描 **********************/
 void laser_loop()
 {
+	/**** 解析扫描 ******/
+	if(ucLaser_rec_success == 1)
+	{
+		serial_decode(ucLaser_rec_bytes, &stLaser_decode, ucLaser_rec_bytes_len, 1);
+		ucLaser_rec_success = 0;
+	}
 	/*********   定时发送 **************/
 	if(ucLaser_success == 0)   // 自检状态
 	{
@@ -158,7 +173,6 @@ void laser_loop()
 			laser_time_count = 0;
 		}
 	}
-	
 	switch(ucLaser_send_status)          
 	{
 		case 0:
@@ -179,66 +193,21 @@ void laser_loop()
 			serial_build_protocol(ucLaser_query_datas, ucLaser_query_bytes, 12);
 			laser_send(ucLaser_query_bytes, ucLaser_send_bytes_len);    // 发送一次
 			break;
-	}
-	/********* 定时接收程序 ************/
-	ucLaser_rec_bytes_len = 6;      // 后面要尝试一下先从串口的buffer中读取字节数，然后再进行判断
-	if(laser_receive(ucLaser_rec_bytes, ucLaser_rec_bytes_len))   // 串口接收
-	{
-		serial_decode(ucLaser_rec_bytes, &stLaser_decode, ucLaser_rec_bytes_len, 1);
-	}
-	
+	}	
 }
 /***************   串口发送 **********************/
 void serial_send(uchar *ucArrData, uchar ucBytes_len)
 {
 	R_PG_SCI_StartSending_C6(ucArrData, ucBytes_len);//R_PG_SCI_StartSending_C2(ucArrData, ucBytes_len);              // 通过SCI的方式将数组发送出去
-	//SCI6.SSR.BIT.TDRE = 0X01;
 
 }
 /***************   激光板串口发送 **********************/
 void laser_send(uchar *ucArrData, uchar ucBytes_len)
 {
 	R_PG_SCI_StartSending_C0(ucArrData, ucBytes_len);//R_PG_SCI_StartSending_C2(ucArrData, ucBytes_len);              // 通过SCI的方式将数组发送出去
-	//SCI6.SSR.BIT.TDRE = 0X01;
-
 }
 
-/********************* 串口接收 **********************************/
-bool serial_receive(uchar *ucSerial_datas, uint uiCount){
-
-	bool blResult = 0;
-	int isCount = 0;
-	R_PG_SCI_StartReceiving_C6(ucSerial_datas, uiCount);
-
-	for(isCount = 0 ; isCount < uiCount; isCount++)
-	{
-		if(ucSerial_datas[isCount] != 0)
-			blResult = 1;
-			break;	
-	}
-
-	return blResult;
-	//return 1;
-}
-/********************* 激光板串口接收 **********************************/
-bool laser_receive(uchar * ucSerial_datas, uint uiCount)
-{
-
-	bool blResult = 0;
-	int isCount = 0;
-	R_PG_SCI_StartReceiving_C0(ucSerial_datas, uiCount);
-	SCI0.SSR.BIT.RDRF = 0;
-	
-	for(isCount = 0 ; isCount < uiCount; isCount++)
-	{
-		if(ucSerial_datas[isCount] != 0)
-			blResult = 1;
-			break;	
-	}
-	return blResult;
-}
-
-/*************** 串口编码 **********************/
+/*************** 上位机编码 **********************/
 /************* serial protocol *****************
 1	起始字节	2	0x55AA	
 2	数据长度	1	0x18	
@@ -305,7 +274,6 @@ void serial_build_protocol(uchar *ucSerial_datasBits, uchar *ucSerial_bytes, uch
 	ucSerial_bytes[3 + i32count] = serial_cal_checkout(ucSerial_datasBits, ucDataBytes_Len);  //校验和	
 }
 /****************** 串口解码 ********************/
-
 /********************** upper machine to slave  protocol *****************************
 序号	名称	字节数	单位	范围(处理后)	比例尺	备注
 1	起始字节	2	0x55AA	
@@ -416,7 +384,6 @@ Description: // 将四个字节的数转换成四个字节的数组
 Input: // 输入uint的数和获取的字节数组
 Others: // 小在前的解析协议
 *************************************************/
-//static void serial_u32toucArr(uint uiData, uchar *ucByteArr)
 void serial_u32toucArr(uint uiData, uchar *ucByteArr)
 {
 	ucByteArr[0] = uiData % 256;      // 低八位在前

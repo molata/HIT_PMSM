@@ -1,6 +1,10 @@
 #include "iodefine.h"
 void spi_Setup()
 {
+	R_PG_RSPI_Set_C0();
+	R_PG_RSPI_SetCommand_C0();
+	RSPI0.SPCR.BIT.SPE = 1;
+/*****
 //////////////////////////////////////////////////////////////spi set/////////////////////////////////////////////
 	SYSTEM.MSTPCRA.BIT.MSTPA28 = 1;//STOP DTC
 	SYSTEM.MSTPCRB.BIT.MSTPB17 = 0;//ENABLE SPI
@@ -46,10 +50,14 @@ void spi_Setup()
 	
 	RSPI0.SPCR.BIT.SPE = 1;
 //////////////////////////////////////////////////////////////spi set end//////////////////////////////////////////	
-
+*******/
 }
 void spi1_Setup()
 {
+	R_PG_RSPI_Set_C1();
+	R_PG_RSPI_SetCommand_C1();
+	RSPI1.SPCR.BIT.SPE = 1;
+/****
 	//////////////////////////////////////////////////////////////spi set/////////////////////////////////////////////
 	SYSTEM.MSTPCRA.BIT.MSTPA28 = 1;//STOP DTC
 	SYSTEM.MSTPCRB.BIT.MSTPB16 = 0;//ENABLE SPI
@@ -96,9 +104,5 @@ void spi1_Setup()
 	
 	RSPI1.SPCR.BIT.SPE = 1;
 //////////////////////////////////////////////////////////////spi set end//////////////////////////////////////////	
-}
-
-void TAloop()
-{
-	
+*****/
 }

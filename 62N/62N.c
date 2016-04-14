@@ -27,21 +27,8 @@ void abort(void);
 unsigned char data[16] = {0};
 void main(void)
 {
-	/***
 	HIT_hardwaresetup();      // 硬件初始化
-	RSPI1.SPCR.BIT.SPE = 1;
-	RSPI0.SPCR.BIT.SPE = 1;
-	RSPI1.SPCMD0.BIT.SPB = 0X07;
-	//HIT_par_initial();        //参数初始化 
-	/***
-	PORTE.DDR.BIT.B6 = 0X01;
-	PORTE.DR.BIT.B6 = 0X00;
-	PORTE.DDR.BIT.B7 = 0X01;
-	PORTE.DR.BIT.B7 = 0X00; ***/
-	R_PG_Clock_Set();
-	R_PG_SCI_Set_C6();   
-	R_PG_Timer_Start_CMT_U0_C0();
-	R_PG_Timer_Start_CMT_U0_C1();
+
 	while(1)
 	{
 		

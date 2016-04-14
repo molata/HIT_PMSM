@@ -14,5 +14,6 @@ void Spi1IntFunc()
 }
 void Cmt0IntFunc()
 {
-	
+	serial_receive_loop();
+	laser_receive_loop();
 }

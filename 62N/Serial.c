@@ -2,8 +2,14 @@
 #include "iodefine.h"
 #include "HIT_common.h"
 #include <string.h>
+#include "HIT_SPI.h"
+/****************** 207程序通信相关 ********************************/
+extern UNSENSOR_STATES unAllsensor_states;   // 内部所有传感器的状态
+extern uchar ucSPI_62TB_cmd;                 // 决定是否要发命令给62TA
+extern uchar ucSPI_62TA_cmd;                // 决定是否要发送命令62TB
+
 /**************** 上位机接收相关的数据结构 ********************/
-extern ST_SERIAL_DECODE stSerial_decode;     //解析上位机的结构体 
+ST_SERIAL_DECODE stSerial_decode;     //解析上位机的结构体 
 extern ST_PC_CMD st_pc_cmd;              //计算器指令结构体，用于缓冲上位机的指令
 uchar ucSerial_rec_bytes[16] = {0};    //从上位机获取的握手信息
 uchar ucSerial_buffer_rec_bytes[16] = {0};    //串口接收的缓冲数组
@@ -22,13 +28,13 @@ uint u32Package_count = 0;            			// 包计数
 uchar ucRerial_Send_Bytes_Len = 0;                 // 接收的数据位长度   ？？ 需要修改的变量
 
 /***************** 激光板接收相关的数据结构 *******************/
-extern ST_SERIAL_DECODE stLaser_decode;     // 解析激光板的结构体
+ST_SERIAL_DECODE stLaser_decode = {0};     //解析激光板的结构体
+uchar ucLaser_success = 0;       // laser launch result feedback
 uchar ucLaser_rec_bytes[26] = {0};      // 接收激光板的数组
 uchar ucLaser_buffer_rec_bytes[26];     // 接收激光板的缓冲数组
 uchar ucLaser_Rec_Count = 0;                // 激光板接收的计数器
 uchar ucLaser_rec_bytes_len = 0;        // 接收激光板的数据长度         
 uchar ucLaser_rec_success = 0;          // 判断是否接收成功
-extern uchar ucLaser_success;          // 激光板测试是否成功
 
 /******************激光板发送相关的数据结构 *********************/
 uchar ucLaser_query_bytes[16] = {0};    // 激光板发送的所有字节
@@ -81,13 +87,14 @@ void serial_receive_loop()
 			for(iswape = 0; iswape < uiSerial_rec_bytes_len; iswape++)   // 将缓冲的数组数据放到接收数组中
 			{
 				ucSerial_rec_bytes[iswape] = ucSerial_buffer_rec_bytes[iswape];
-				ucSerial_Rec_Success = 1;
 			}
 			ucSerial_Rec_Count = 0;
+			ucSerial_Rec_Success = 1;
 		} // 握手未成功，只接收5个字节
 	} // 读写结束
 	
 	SCI6.SSR.BIT.ORER = 0;   // 溢出标志量，清零
+	SCI6.SSR.BIT.FER = 0; 
 	SCI6.SCR.BIT.RE = 0X01;  // 手动接收使能
 	SCI6.SCR.BIT.RIE = 0X01; // 手动接收中断使能
 }
@@ -117,7 +124,13 @@ void serial_loop()
 					ucRerial_Send_Bytes_Len = 22;
 					serial_encode(stSerial_data, ucSerial_send_dataBits);    // 将当前的内部数据状态结构体，转换成数组
 					serial_build_protocol(ucSerial_send_dataBits, ucSerial_send_bytes, ucRerial_Send_Bytes_Len);  // 
-					serial_send(ucSerial_send_bytes, ucRerial_Send_Bytes_Len+4);  
+					serial_send(ucSerial_send_bytes, ucRerial_Send_Bytes_Len+4);   // 向上位机发送当前指令
+					
+					ucSPI_62TB_cmd = SPI_SEND_CMD;    // 向62T发送指令
+					ucSPI_62TA_cmd = SPI_SEND_CMD;	
+					
+					ucLaser_send_status = 2;         // 向激光板发送指令
+					
 					ucSerial_send_status = 0;
 				}
 				break;
@@ -151,6 +164,7 @@ void laser_receive_loop()
 	} // 读写结束
 	
 	SCI0.SSR.BIT.ORER = 0;   // 溢出标志量，清零
+	SCI6.SSR.BIT.FER = 0; 
 	SCI0.SCR.BIT.RE = 0X01;  // 手动接收使能
 	SCI0.SCR.BIT.RIE = 0X01; // 手动接收中断使能
 }
@@ -185,6 +199,8 @@ void laser_loop()
 			ucLaser_query_bytes[3]  = 0X01;
 			ucLaser_query_bytes[4]  = 0X02;
 			laser_send(ucLaser_query_bytes, ucLaser_send_bytes_len);    // 发送一次
+			
+			ucLaser_send_status = 0;   // 状态置零
 			break;
 		case 2:
 			ucLaser_send_bytes_len = 16;    //向激光板发送5个字节
@@ -192,6 +208,8 @@ void laser_loop()
 			ucLaser_query_datas[5] = st_pc_cmd.ucMod_type;     // 发送码型
 			serial_build_protocol(ucLaser_query_datas, ucLaser_query_bytes, 12);
 			laser_send(ucLaser_query_bytes, ucLaser_send_bytes_len);    // 发送一次
+			
+			ucLaser_send_status = 0; // 状态置零
 			break;
 	}	
 }
@@ -260,8 +278,6 @@ Others: //
 void serial_build_protocol(uchar *ucSerial_datasBits, uchar *ucSerial_bytes, uchar ucDataBytes_Len)
 {
 	int i32count = 0;
-	uint uiCheckout_sum = 0;
-	uchar ucCheckout_count = 0;
 	char ucCheckout_real = 0;  
 		
 	ucSerial_bytes[0] = 0x55;    // 1. headline1
@@ -290,8 +306,6 @@ void serial_build_protocol(uchar *ucSerial_datasBits, uchar *ucSerial_bytes, uch
 void serial_decode(const uchar *ucSerial_rec_bits, ST_SERIAL_DECODE *stSerial_decode, uchar ucByte_len, uchar ucMac_type)
 {
 	int i32Decode_count = 0;
-	int i32Current_ArrSize = 0;
-	int i32Clear_count = 0;
 	uchar ucCurrent_byte = 0;
 	for (i32Decode_count = 0; i32Decode_count < ucByte_len; i32Decode_count++){
 		ucCurrent_byte = ucSerial_rec_bits[i32Decode_count];
@@ -337,16 +351,15 @@ void serial_decode(const uchar *ucSerial_rec_bits, ST_SERIAL_DECODE *stSerial_de
 							st_pc_cmd.fpSailDeg = stSerial_decode->ucSerial_dataBits[1];
 							st_pc_cmd.ucCapture = stSerial_decode->ucSerial_dataBits[2];
 							st_pc_cmd.ucMod_type = stSerial_decode->ucSerial_dataBits[3];
-							
-							ucSerial_send_status = 2;
+							ucSerial_send_status = 2;    // 其他的工作放在外面去做，比如像两个62T发送电机指令
 						}
 					}
 					else if (ucMac_type == 1)
 					{
-						//if(stSerial_decode->ucSerial_dataBits[1] == 0 && stSerial_decode->ucSerial_data_length == 2)
-						if(stSerial_decode->ucSerial_data_length == 2)
+						if(stSerial_decode->ucSerial_dataBits[1] == 0 && stSerial_decode->ucSerial_data_length == 2)
 						{
-							ucLaser_success = 1;	
+							ucLaser_success = 1;
+							unAllsensor_states.STATE.LASER = 0x01;	
 						}
 						else if(stSerial_decode->ucSerial_data_length == 22)
 						{ 
@@ -356,7 +369,6 @@ void serial_decode(const uchar *ucSerial_rec_bits, ST_SERIAL_DECODE *stSerial_de
 							stSerial_data.sheer_view_deg_speed = stSerial_decode->ucSerial_dataBits[15];
 							stSerial_data.elevation_trace_deg_offset = stSerial_decode->ucSerial_dataBits[16];
 							stSerial_data.sheer_trace_deg_offset = stSerial_decode->ucSerial_dataBits[17];
-							ucSerial_send_status = 2;                     // 激光板接收成功，将结果发送给上位机
 						}
 					}
 					

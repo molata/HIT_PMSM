@@ -24,7 +24,6 @@ extern void Sci5ReFunc(void);
 extern void Sci6TrFunc(void);
 extern void Sci6ReFunc(void);
 extern void Sci6ErFunc(void);
-extern void Spi1IntFunc(void);
 
 
 

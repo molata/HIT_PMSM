@@ -12,7 +12,7 @@ void Spi1IntFunc()
 		RSPI1.SPSR.BIT.MODF = 0X00;
 	}	
 }
-void Cmt0IntFunc()
+void Cmt0IntFunc()   // 4us
 {
 	serial_receive_loop();
 	laser_receive_loop();

@@ -71,10 +71,10 @@ bool R_PG_RSPI_Set_C1(void)
 {
 	return R_SPI_Create(
 		1,
-		PDL_SCI_MODE_SYNC_SLAVE | PDL_SPI_FULL_DUPLEX | PDL_SPI_PIN_CMOS | PDL_SPI_PIN_A | PDL_SPI_PIN_RSPCK_ENABLE | PDL_SPI_PIN_MOSI_ENABLE | PDL_SPI_PIN_MISO_ENABLE | PDL_SPI_PIN_SSL0_DISABLE | PDL_SPI_PIN_SSL1_DISABLE | PDL_SPI_PIN_SSL2_DISABLE | PDL_SPI_PIN_SSL3_DISABLE,
+		PDL_SCI_MODE_SYNC_MASTER | PDL_SPI_FULL_DUPLEX | PDL_SPI_PIN_CMOS | PDL_SPI_PIN_A | PDL_SPI_PIN_RSPCK_ENABLE | PDL_SPI_PIN_MOSI_ENABLE | PDL_SPI_PIN_MISO_ENABLE | PDL_SPI_PIN_SSL0_DISABLE | PDL_SPI_PIN_SSL1_DISABLE | PDL_SPI_PIN_SSL2_DISABLE | PDL_SPI_PIN_SSL3_DISABLE | PDL_SPI_PIN_MOSI_IDLE_HIGH,
 		PDL_SPI_BUFFER_64 | PDL_SPI_FRAME_1_1 | PDL_SPI_PARITY_NONE,
-		PDL_NO_DATA,
-		PDL_NO_DATA
+		PDL_SPI_CLOCK_DELAY_1 | PDL_SPI_SSL_DELAY_1 | PDL_SPI_NEXT_DELAY_1,
+		0x17 | 0x80000000
 	);
 }
 
@@ -105,8 +105,8 @@ bool R_PG_RSPI_SetCommand_C1(void)
 	res = R_SPI_Command(
 		1,
 		0,
-		PDL_SPI_CLOCK_MODE_3 | PDL_SPI_LENGTH_16 | PDL_SPI_MSB_FIRST,
-		PDL_NO_DATA
+		PDL_SPI_CLOCK_MODE_3 | PDL_SPI_DIV_1 | PDL_SPI_ASSERT_SSL0 | PDL_SPI_SSL_NEGATE | PDL_SPI_LENGTH_16 | PDL_SPI_LSB_FIRST,
+		PDL_SPI_CLOCK_DELAY_MINIMUM | PDL_SPI_SSL_DELAY_MINIMUM | PDL_SPI_NEXT_DELAY_MINIMUM
 	);
 
 	if( !res ){
@@ -121,11 +121,11 @@ bool R_PG_RSPI_SetCommand_C1(void)
 *
 * Include      : 
 *
-* Declaration  : bool R_PG_RSPI_StartTransfer_C1(uint32_t * tx_start, uint32_t * rx_start, uint16_t sequence_loop_count)
+* Declaration  : bool R_PG_RSPI_TransferAllData_C1(uint32_t * tx_start, uint32_t * rx_start, uint16_t sequence_loop_count)
 *
-* Function Name: R_PG_RSPI_StartTransfer_C1
+* Function Name: R_PG_RSPI_TransferAllData_C1
 *
-* Description  : Start the data transfer of RSPI
+* Description  : Transmit all data
 *
 * Arguments    : uint32_t * tx_start : The start address of the data to be sent.
 *              : uint32_t * rx_start : The start address of the received data.
@@ -138,7 +138,7 @@ bool R_PG_RSPI_SetCommand_C1(void)
 *
 * Details      : Please refer to the Reference Manual.
 ******************************************************************************/
-bool R_PG_RSPI_StartTransfer_C1(uint32_t * tx_start, uint32_t * rx_start, uint16_t sequence_loop_count)
+bool R_PG_RSPI_TransferAllData_C1(uint32_t * tx_start, uint32_t * rx_start, uint16_t sequence_loop_count)
 {
 	if( (tx_start == 0) || \
 		(rx_start == 0) )
@@ -152,8 +152,8 @@ bool R_PG_RSPI_StartTransfer_C1(uint32_t * tx_start, uint32_t * rx_start, uint16
 		tx_start,
 		rx_start,
 		sequence_loop_count,
-		Spi1IntFunc,
-		15
+		PDL_NO_FUNC,
+		0
 	);
 }
 
@@ -247,6 +247,48 @@ bool R_PG_RSPI_GetError_C1(bool * over_run, bool * mode_falt, bool * parity_erro
 	}
 	if( parity_error ){
 		*parity_error = (status >> 3) & 0x01;
+	}
+
+	return res;
+}
+
+/******************************************************************************
+* ID           : 
+*
+* Include      : 
+*
+* Declaration  : bool R_PG_RSPI_GetCommandStatus_C1(uint8_t * current_command, uint8_t * error_command)
+*
+* Function Name: R_PG_RSPI_GetCommandStatus_C1
+*
+* Description  : Acquire the command status flag
+*
+* Arguments    : uint8_t * current_command : The address of storage area for the current command pointer (0 to 7)
+*              : uint8_t * error_command : The address of storage area for the command pointer when an error is detected (0 to 7)
+*
+* Return Value : true  : Acquisition succeeded.
+*              : false : Acquisition failed.
+*
+* Calling Functions : R_SPI_GetStatus
+*
+* Details      : Please refer to the Reference Manual.
+******************************************************************************/
+bool R_PG_RSPI_GetCommandStatus_C1(uint8_t * current_command, uint8_t * error_command)
+{
+	uint16_t status;
+	bool res;
+
+	res = R_SPI_GetStatus(
+		1,
+		&status,
+		PDL_NO_PTR
+	);
+
+	if( current_command ){	
+		*current_command = (status >> 8) & 0x07;
+	}
+	if( error_command ){
+		*error_command = (status >> 12) & 0x07;
 	}
 
 	return res;

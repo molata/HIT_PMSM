@@ -347,10 +347,10 @@ void serial_decode(const uchar *ucSerial_rec_bits, ST_SERIAL_DECODE *stSerial_de
 						}
 						else if(stSerial_decode->ucSerial_data_length == 12)
 						{
-							st_pc_cmd.fpPitchDeg = stSerial_decode->ucSerial_dataBits[0];
-							st_pc_cmd.fpSailDeg = stSerial_decode->ucSerial_dataBits[1];
-							st_pc_cmd.ucCapture = stSerial_decode->ucSerial_dataBits[2];
-							st_pc_cmd.ucMod_type = stSerial_decode->ucSerial_dataBits[3];
+							st_pc_cmd.fpPitchDeg = ((float)(stSerial_decode->ucSerial_dataBits[0] + stSerial_decode->ucSerial_dataBits[1] * 256 - 1750))/100;    // 接收角度
+							st_pc_cmd.fpSailDeg = ((float)(stSerial_decode->ucSerial_dataBits[2] + stSerial_decode->ucSerial_dataBits[3] * 256 - 1750))/100;
+							st_pc_cmd.ucCapture = stSerial_decode->ucSerial_dataBits[4];
+							st_pc_cmd.ucMod_type = stSerial_decode->ucSerial_dataBits[5];
 							ucSerial_send_status = 2;    // 其他的工作放在外面去做，比如像两个62T发送电机指令
 						}
 					}
@@ -365,10 +365,10 @@ void serial_decode(const uchar *ucSerial_rec_bits, ST_SERIAL_DECODE *stSerial_de
 						{ 
 							stSerial_data.work_status = stSerial_decode->ucSerial_dataBits[4];    //接收激光板状态
 							stSerial_data.code_pattern = stSerial_decode->ucSerial_dataBits[5];    //接收码型
-							stSerial_data.elevation_view_deg_speed = stSerial_decode->ucSerial_dataBits[14];
-							stSerial_data.sheer_view_deg_speed = stSerial_decode->ucSerial_dataBits[15];
-							stSerial_data.elevation_trace_deg_offset = stSerial_decode->ucSerial_dataBits[16];
-							stSerial_data.sheer_trace_deg_offset = stSerial_decode->ucSerial_dataBits[17];
+							stSerial_data.elevation_view_deg_speed = (float)(stSerial_decode->ucSerial_dataBits[9] + stSerial_decode->ucSerial_dataBits[10] * 256 - 1000)/100;    // 
+							stSerial_data.sheer_view_deg_speed = (float)(stSerial_decode->ucSerial_dataBits[11] + stSerial_decode->ucSerial_dataBits[12] * 256 - 1000)/100; 
+							stSerial_data.elevation_trace_deg_offset = (float)(stSerial_decode->ucSerial_dataBits[13] + stSerial_decode->ucSerial_dataBits[14] * 256 - 1500)/100;
+							stSerial_data.sheer_trace_deg_offset = (float)(stSerial_decode->ucSerial_dataBits[15] + stSerial_decode->ucSerial_dataBits[16] * 256 - 1500)/100; 
 						}
 					}
 					

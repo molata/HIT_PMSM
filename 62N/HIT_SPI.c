@@ -22,21 +22,9 @@ void SPI_62TA_loop()
 {
 	if(ucSPI_62TA_cmd == SPI_CHECK_62T)  // 向62T发送查询指令
 	{
-		//us62TA_send_data = 0x55AA;
-		ucSPI_Check_count++;
-		//if(ucSPI_Check_count > 10)
-		//{
-			us62TA_send_data = usTemp_PC_cmd;   // 仅仅用来测试
-			R_PG_RSPI_TransferAllData_C0(&us62TA_send_data, &us62TA_rec_data, 1);    // 发送上位机指令
-			if(us62TB_rec_history != us62TA_rec_data)
-			{
-				usTemp_PC_cmd++;	
-			}
-			us62TB_rec_history = us62TA_rec_data;
-			stSerial_data.elevation_deg = (float)(us62TA_rec_data)/65536 * 360;     // 更新角度值
-			ucSPI_Check_count = 0;
-		//}
-		
+		us62TA_send_data = 0X55AA;
+		R_PG_RSPI_TransferAllData_C0(&us62TA_send_data, &us62TA_rec_data, 1);    // 发送上位机指令
+		stSerial_data.elevation_deg = (float)(us62TA_rec_data)/65536 * 360;     // 更新角度值		
 	}
 	else if (ucSPI_62TA_cmd == SPI_SEND_CMD)
 	{

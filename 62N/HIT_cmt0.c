@@ -1,6 +1,7 @@
 #include "iodefine.h"
 #include "typedefine.h"
 #include "Serial.h"
+
 void Spi1IntFunc()
 {
 	if(RSPI1.SPSR.BIT.OVRF)
@@ -14,6 +15,6 @@ void Spi1IntFunc()
 }
 void Cmt0IntFunc()   // 4us
 {
-	serial_receive_loop();
-	laser_receive_loop();
+	//serial_receive_loop();
+	//laser_receive_loop();
 }

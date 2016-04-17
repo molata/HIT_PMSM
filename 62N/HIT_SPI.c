@@ -8,8 +8,11 @@ extern ST_SERIAL_DATA stSerial_data;     // 内部状态结构体
 extern ST_PC_CMD st_pc_cmd;              //计算器指令结构体，用于缓冲上位机的指令
 ushort us62TA_send_data = 0;     // 向62TA发送命令
 ushort us62TA_rec_data = 0;      // 接收62TA的角度数据
+ushort us62TA_rec_history = 0;      // 接收62TA的角度数据
 ushort us62TB_send_data = 0;     // 向62TB发送命令
 ushort us62TB_rec_data = 0;      // 接收62TB的角度数据
+ushort us62TB_rec_history = 0;      // 接收62TA的角度数据
+ushort usTemp_PC_cmd = 0;
 unsigned char ucTestSerial[2] = {0x55, 0xaa};
 
 uchar ucSPI_62TA_cmd = 0;             // SPI查询状态
@@ -19,14 +22,20 @@ void SPI_62TA_loop()
 {
 	if(ucSPI_62TA_cmd == SPI_CHECK_62T)  // 向62T发送查询指令
 	{
-		us62TA_send_data = 0xAAAA;
+		//us62TA_send_data = 0x55AA;
 		ucSPI_Check_count++;
-		if(ucSPI_Check_count > 10)
-		{
+		//if(ucSPI_Check_count > 10)
+		//{
+			us62TA_send_data = usTemp_PC_cmd;   // 仅仅用来测试
 			R_PG_RSPI_TransferAllData_C0(&us62TA_send_data, &us62TA_rec_data, 1);    // 发送上位机指令
+			if(us62TB_rec_history != us62TA_rec_data)
+			{
+				usTemp_PC_cmd++;	
+			}
+			us62TB_rec_history = us62TA_rec_data;
 			stSerial_data.elevation_deg = (float)(us62TA_rec_data)/65536 * 360;     // 更新角度值
 			ucSPI_Check_count = 0;
-		}
+		//}
 		
 	}
 	else if (ucSPI_62TA_cmd == SPI_SEND_CMD)

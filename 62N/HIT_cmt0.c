@@ -55,4 +55,29 @@ void Cmt0IntFunc()   // 4us
 	{
 		ucSPI_sendTA_startCount = 1;	
 	}
+	/********************** 62TB发送指令 **************************/
+	uc62TB_IO_Value = PORTA.PORT.BIT.B0;
+	if(ucSPI_sendTB_startCount == 1)
+	{
+		ucSPI_sendTB_count++;
+		if(ucSPI_sendTB_count >= 12)  //接收中断后20us,发数
+		{
+			ucSPI_sendTB = 1;	
+			ucSPI_sendTB_count = 0;
+			ucSPI_sendTB_startCount = 0;
+		}	
+	}
+	if(uc62TB_IO_Value != uc62TB_IO_history)
+	{
+		uc62TB_IO_history = uc62TB_IO_Value;
+		uc62TB_fresh = 1;
+	}
+	else 
+	{
+		uc62TB_fresh = 0;	
+	}
+	if(uc62TB_fresh == 1 && uc62TB_IO_Value == 1)
+	{
+		ucSPI_sendTB_startCount = 1;	
+	}
 }

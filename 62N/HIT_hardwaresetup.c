@@ -36,7 +36,7 @@ void System_setup()
 /**** Port54 for 62TA 使能信号端 *****/
 	PORT5.DDR.BIT.B4 = 0x00;   // 输入模式
 	PORT5.ICR.BIT.B4 = 0X01;   // 输入口使能 
-/**** Port54 for 62TA 使能信号端 *****/
+/**** PortA0 for 62TB 使能信号端 *****/
 	PORTA.DDR.BIT.B0 = 0x00;   // 输入模式
 	PORTA.ICR.BIT.B0 = 0X01;   // 输入口使能 
 }

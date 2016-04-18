@@ -58,6 +58,7 @@ void Cmt0IntFunc()   // 4us
 	}
 
 	/********************** 62TB∑¢ÀÕ÷∏¡Ó **************************/
+
 	uc62TB_IO_Value = PORTA.PORT.BIT.B0;
 	if(ucSPI_sendTB_startCount == 1)
 	{
@@ -82,4 +83,5 @@ void Cmt0IntFunc()   // 4us
 	{
 		ucSPI_sendTB_startCount = 1;	
 	}
+
 }

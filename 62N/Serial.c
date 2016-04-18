@@ -395,10 +395,8 @@ void serial_decode(const uchar *ucSerial_rec_bits, ST_SERIAL_DECODE *stSerial_de
 							ucLaser_success = 1;
 							stSerial_data.work_status = stSerial_decode->ucSerial_dataBits[4];    //接收激光板状态
 							stSerial_data.code_pattern = stSerial_decode->ucSerial_dataBits[5];    //接收码型
-							stSerial_data.elevation_view_deg_speed = (float)(stSerial_decode->ucSerial_dataBits[9] + stSerial_decode->ucSerial_dataBits[10] * 256 - 1000)/100;    // 
-							stSerial_data.sheer_view_deg_speed = (float)(stSerial_decode->ucSerial_dataBits[11] + stSerial_decode->ucSerial_dataBits[12] * 256 - 1000)/100; 
-							stSerial_data.elevation_trace_deg_offset = (float)(stSerial_decode->ucSerial_dataBits[13] + stSerial_decode->ucSerial_dataBits[14] * 256 - 1500)/100;
-							stSerial_data.sheer_trace_deg_offset = (float)(stSerial_decode->ucSerial_dataBits[15] + stSerial_decode->ucSerial_dataBits[16] * 256 - 1500)/100; 
+							stSerial_data.elevation_trace_deg_offset = (float)(stSerial_decode->ucSerial_dataBits[14] + stSerial_decode->ucSerial_dataBits[15] * 256 - 1500)/100;
+							stSerial_data.sheer_trace_deg_offset = (float)(stSerial_decode->ucSerial_dataBits[16] + stSerial_decode->ucSerial_dataBits[17] * 256 - 1500)/100; 
 							
 							ucSerial_send_status = 2;    // 其他的工作放在外面去做，比如像两个62T发送电机指令
 							st_pc_cmd.fpPitchDeg = -stSerial_data.elevation_trace_deg_offset;

@@ -34,7 +34,7 @@ void SPI_62TA_loop()
 			}
 			usTemp_PCA_cmd++;
 			us62TA_rec_history = us62TA_rec_data;
-			stSerial_data.elevation_deg = (float)(us62TA_rec_data)/65536 * 360;     // 更新角度值
+			stSerial_data.elevation_deg = ((float)(us62TA_rec_data) - 1800)/ 100;     // 更新角度值
 		//}
 		
 	}
@@ -62,6 +62,7 @@ void SPI_62TB_loop()
 	{
 			//us62TB_send_data = usTemp_PCB_cmd;   // 仅仅用来测试
 			us62TB_send_data = 0x55AA;
+			//PORTE.DR.BIT.B3 = !PORTE.DR.BIT.B3;
 			R_PG_RSPI_TransferAllData_C1(&us62TB_send_data, &us62TB_rec_data, 1);    // 发送上位机指令
 			if(us62TB_rec_history != us62TB_rec_data)
 			{
@@ -69,7 +70,7 @@ void SPI_62TB_loop()
 			}
 			usTemp_PCB_cmd++;
 			us62TB_rec_history = us62TB_rec_data;
-			stSerial_data.elevation_deg = (float)(us62TB_rec_data)/65536 * 360;     // 更新角度值
+			stSerial_data.elevation_deg = ((float)(us62TB_rec_data) - 1800)/ 100;     // 更新角度值
 	}
 	else if (ucSPI_62TB_cmd == SPI_SEND_CMD)
 	{

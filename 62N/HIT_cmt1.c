@@ -7,7 +7,6 @@ void Cmt1IntFunc()   // 50us
 {
 	//serial_loop();
 	laser_loop();
-	PORTE.DR.BIT.B3 = !PORTE.DR.BIT.B3;
 /***** SPI接收和发送 ********/
 
 	if(ucSPI_sendTA == 1)
@@ -16,9 +15,11 @@ void Cmt1IntFunc()   // 50us
 		ucSPI_sendTA = 0;	
 	}
 /***** SPI接收和发送 ********/
+
 	if(ucSPI_sendTB == 1)
 	{
 		SPI_62TB_loop();
 		ucSPI_sendTB = 0;	
 	}
+
 }

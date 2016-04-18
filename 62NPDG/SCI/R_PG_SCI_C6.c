@@ -36,7 +36,7 @@
 * Description  : 
 * Limitations  : 
 ******************************************************************************
-* History : 14.04.2016 Version Description
+* History : 18.04.2016 Version Description
 *         :   
 ******************************************************************************/
 
@@ -73,7 +73,7 @@ bool R_PG_SCI_Set_C6(void)
 		6,
 		PDL_SCI_ASYNC | PDL_SCI_TX_CONNECTED | PDL_SCI_RX_CONNECTED | PDL_SCI_CLK_INT_IO | PDL_SCI_8_BIT_LENGTH | PDL_SCI_PARITY_NONE | PDL_SCI_STOP_1,
 		BIT_31 | PDL_SCI_PCLK_DIV_1 | PDL_SCI_CYCLE_BIT_8 | 0xc | (230769 & 0x00FFFF00ul),
-		15
+		13
 	);
 }
 

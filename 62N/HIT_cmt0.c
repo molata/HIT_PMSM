@@ -27,9 +27,10 @@ void Spi1IntFunc()
 }
 void Cmt0IntFunc()   // 4us
 {
-	serial_receive_loop();
+	//serial_receive_loop();
 	laser_receive_loop();
 	/********************** 62TA发送指令 **************************/
+
 	//if(uc62TA_IO != PORT5.DR.BIT.B4)
 	uc62TA_IO_Value = PORT5.PORT.BIT.B4;
 	if(ucSPI_sendTA_startCount == 1)
@@ -55,6 +56,7 @@ void Cmt0IntFunc()   // 4us
 	{
 		ucSPI_sendTA_startCount = 1;	
 	}
+
 	/********************** 62TB发送指令 **************************/
 	uc62TB_IO_Value = PORTA.PORT.BIT.B0;
 	if(ucSPI_sendTB_startCount == 1)

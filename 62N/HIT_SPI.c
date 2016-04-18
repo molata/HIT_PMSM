@@ -23,10 +23,10 @@ void SPI_62TA_loop()
 {
 	if(ucSPI_62TA_cmd == SPI_CHECK_62T)  // 向62T发送查询指令
 	{
-		//us62TA_send_data = 0x55AA;
+		us62TA_send_data = 0x55AA;
 		//if(ucSPI_Check_count > 10)
 		//{
-			us62TA_send_data = usTemp_PCA_cmd;   // 仅仅用来测试
+			//us62TA_send_data = usTemp_PCA_cmd;   // 仅仅用来测试
 			R_PG_RSPI_TransferAllData_C0(&us62TA_send_data, &us62TA_rec_data, 1);    // 发送上位机指令
 			if(us62TA_rec_history != us62TA_rec_data)
 			{
@@ -60,7 +60,8 @@ void SPI_62TB_loop()
 {
 	if(ucSPI_62TB_cmd == SPI_CHECK_62T)  // 向62T发送查询指令
 	{
-			us62TB_send_data = usTemp_PCB_cmd;   // 仅仅用来测试
+			//us62TB_send_data = usTemp_PCB_cmd;   // 仅仅用来测试
+			us62TB_send_data = 0x55AA;
 			R_PG_RSPI_TransferAllData_C1(&us62TB_send_data, &us62TB_rec_data, 1);    // 发送上位机指令
 			if(us62TB_rec_history != us62TB_rec_data)
 			{
@@ -70,7 +71,7 @@ void SPI_62TB_loop()
 			us62TB_rec_history = us62TB_rec_data;
 			stSerial_data.elevation_deg = (float)(us62TB_rec_data)/65536 * 360;     // 更新角度值
 	}
-	else if (ucSPI_62TA_cmd == SPI_SEND_CMD)
+	else if (ucSPI_62TB_cmd == SPI_SEND_CMD)
 	{
 		us62TB_send_data = (short)(st_pc_cmd.fpSailDeg * 100 + 1800);   // 按照协议的方式发送
 		R_PG_RSPI_TransferAllData_C1(&us62TB_send_data, &us62TB_rec_data, 1);    // 发送上位机指令

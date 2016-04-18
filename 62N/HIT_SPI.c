@@ -30,8 +30,9 @@ void SPI_62TA_loop()
 			R_PG_RSPI_TransferAllData_C0(&us62TA_send_data, &us62TA_rec_data, 1);    // 发送上位机指令
 			if(us62TB_rec_history != us62TA_rec_data)
 			{
-				usTemp_PC_cmd++;	
+					
 			}
+			usTemp_PC_cmd++;
 			us62TB_rec_history = us62TA_rec_data;
 			stSerial_data.elevation_deg = (float)(us62TA_rec_data)/65536 * 360;     // 更新角度值
 			ucSPI_Check_count = 0;

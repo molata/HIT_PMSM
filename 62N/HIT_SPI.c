@@ -105,6 +105,9 @@ void spi1_Setup()
 	R_PG_RSPI_SetCommand_C1();
 	IOPORT.PFHSPI.BIT.RSPIS = 1;
 	RSPI1.SPCR.BIT.SPE = 1;
+	PORTE.ICR.BIT.B7 = 0X01;
+	PORTE.ICR.BIT.B6 = 0X01;
+	PORTE.ICR.BIT.B5 = 0X01;
 }
 
 #endif

@@ -127,11 +127,22 @@ void laser_receive_loop()
 		serial_decode_byte(ucLaser_rec_current_byte, &stLaser_decode, 1);
 		SCI6.SSR.BIT.RDRF = 0;
 	} // 读写结束
-	
-	SCI6.SSR.BIT.ORER = 0;   // 溢出标志量，清零
-	SCI6.SSR.BIT.FER = 0; 
-	SCI6.SCR.BIT.RE = 0X01;  // 手动接收使能
-	SCI6.SCR.BIT.RIE = 0X01; // 手动接收中断使能
+	if(SCI6.SSR.BIT.ORER)
+	{
+		SCI6.SSR.BIT.ORER = 0;   // 溢出标志量，清零	
+	}
+	if(SCI6.SSR.BIT.FER)
+	{
+		SCI6.SSR.BIT.FER = 0; 	
+	}
+	if(SCI6.SCR.BIT.RE == 0)
+	{
+		SCI6.SCR.BIT.RE = 0X01;  // 手动接收使能	
+	}
+	if(SCI6.SCR.BIT.RIE)
+	{
+		SCI6.SCR.BIT.RIE = 0X01; // 手动接收中断使能
+	}
 }
 /******************** 激光板发送扫描 **********************/
 void laser_loop()
@@ -155,7 +166,7 @@ void laser_loop()
 	else if(ucLaser_success == 1)   // 自检通过
 	{
 		laser_time_count++;
-		if(laser_time_count > 9 )    //10ms发送一次
+		if(laser_time_count > 29 )    //30ms发送一次
 		{
 			if(laser_bind_count < 2)  // 装订状态
 			{
@@ -170,7 +181,7 @@ void laser_loop()
 				st_pc_cmd.ucCapture = 0X55;
 				st_pc_cmd.ucMod_type = 0x01;
 				ucLaser_send_status = 2;  // 发送自检指令
-				laser_bind_count =2;
+				laser_bind_count = 3;
 				laser_time_count = 0;
 			}
 			else if(laser_bind_count >= 5 )

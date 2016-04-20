@@ -36,7 +36,7 @@
 * Description  : 
 * Limitations  : 
 ******************************************************************************
-* History : 19.04.2016 Version Description
+* History : 20.04.2016 Version Description
 *         :   
 ******************************************************************************/
 
@@ -72,7 +72,7 @@ bool R_PG_Timer_Start_CMT_U0_C0(void)
 	return R_CMT_Create(
 		0,
 		PDL_CMT_PCLK_DIV_8 | PDL_CMT_DMAC_DTC_TRIGGER_DISABLE,
-		23,
+		29,
 		Cmt0IntFunc,
 		15
 	);

@@ -36,7 +36,7 @@ void Cmt0IntFunc()   // 4us
 	if(ucSPI_sendTA_startCount == 1)
 	{
 		ucSPI_sendTA_count++;
-		if(ucSPI_sendTA_count >= 8)  //接收中断后20us,发数
+		if(ucSPI_sendTA_count >= 6)  //接收中断后20us,发数
 		{
 			ucSPI_sendTA = 1;	
 			ucSPI_sendTA_count = 0;
@@ -63,7 +63,7 @@ void Cmt0IntFunc()   // 4us
 	if(ucSPI_sendTB_startCount == 1)
 	{
 		ucSPI_sendTB_count++;
-		if(ucSPI_sendTB_count >= 12)  //接收中断后20us,发数
+		if(ucSPI_sendTB_count >= 8)  //接收中断后20us,发数
 		{
 			ucSPI_sendTB = 1;	
 			ucSPI_sendTB_count = 0;

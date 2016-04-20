@@ -26,7 +26,16 @@ void SPI_62TA_loop()
 		us62TA_send_data = 0x55AA;
 		//if(ucSPI_Check_count > 10)
 		//{
-			//us62TA_send_data = usTemp_PCA_cmd;   // 仅仅用来测试
+			if(usTemp_PCA_cmd < 10)
+			{
+				us62TA_send_data = 0x55AA;   // 仅仅用来测试
+			}
+			if(usTemp_PCA_cmd >= 10)
+			{
+				us62TA_send_data = 0x55AA;   // 仅仅用来测试
+				usTemp_PCA_cmd = 0;
+			}
+			
 			R_PG_RSPI_TransferAllData_C0(&us62TA_send_data, &us62TA_rec_history, 1);    // 发送上位机指令
 			us62TA_rec_data = us62TA_rec_history;   // 将数据接收走
 			us62TA_rec_history = us62TA_rec_history && 0xFF000000;
@@ -66,11 +75,11 @@ void SPI_62TB_loop()
 {
 	if(ucSPI_62TB_cmd == SPI_CHECK_62T)  // 向62T发送查询指令
 	{
-			//us62TB_send_data = usTemp_PCB_cmd;   // 仅仅用来测试
-			us62TB_send_data = 0x55AA;
+			us62TB_send_data = usTemp_PCB_cmd;   // 仅仅用来测试
+			//us62TB_send_data = 0x55AA;
 			//PORTE.DR.BIT.B3 = !PORTE.DR.BIT.B3;
 			R_PG_RSPI_TransferAllData_C1(&us62TB_send_data, &us62TB_rec_data, 1);    // 发送上位机指令
-				us62TA_rec_data = us62TA_rec_history;   // 将数据接收走
+			us62TA_rec_data = us62TA_rec_history;   // 将数据接收走
 			us62TA_rec_history = us62TA_rec_history && 0xFF000000;
 			if(us62TA_rec_history != 0x55000000)
 			{

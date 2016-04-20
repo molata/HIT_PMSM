@@ -618,12 +618,13 @@
 [WINDOW_POSITION_STATE_DATA_VD3]
 [WINDOW_POSITION_STATE_DATA_VD4]
 [WINDOW_Z_ORDER]
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\Serial.h" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\Serial.c" 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_cmt0.c" 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\resetprg.c" 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62N.c" 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_cmt1.c" 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_SPI.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\Serial.c" 
 [TARGET_NAME]
 "RX600 E1/E20 SYSTEM" "" 0 
 [STATUSBAR_STATEINFO_VD1]
@@ -675,5 +676,5 @@
 [FLASH_DETAILS]
 "" 0 0 "" 0 "" 0 0 "" 0 0 0 0 0 0 0 "" "" "" "" "" 
 [BREAKPOINTS]
-"e:\实验室资料\实验室项目\207项目\主控板调试\62n\62npdg\i_src\interrupt_sci.c" 642 12102 1 "{00000000-0000-0000-C000-000000000046}" "" 
+"e:\实验室资料\实验室项目\207项目\主控板调试\62n\62npdg\i_src\interrupt_sci.c" 642 0 1 "{00000000-0000-0000-C000-000000000046}" "" 
 [END]

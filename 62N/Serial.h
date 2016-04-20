@@ -70,6 +70,8 @@ void serial_build_protocol(uchar *ucSerial_dataBits, uchar *ucSerial_bytes , uch
 *************************************************/
 //void serial_decode(const uchar *ucSerial_rec_bits, ST_SERIAL_DECODE *stSerial_decode, uchar ucByte_len);
 void serial_decode(const uchar *ucSerial_rec_bits, ST_SERIAL_DECODE *stSerial_decode, uchar ucByte_len, uchar ucMac_type);   //ucMac_type: 0: PC; 1: Laser
+
+void serial_decode_byte(const uchar ucCurrent_byte, ST_SERIAL_DECODE *stSerial_decode, uchar ucMac_type);
 /********************* ´®¿Ú½ÓÊÕ **********************************/
 void serial_receive_loop();
 void laser_receive_loop();

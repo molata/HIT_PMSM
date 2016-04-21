@@ -70,8 +70,8 @@ void SPI_62TB_loop()
 {
 	if(ucSPI_62TB_cmd == SPI_CHECK_62T)  // 向62T发送查询指令
 	{
-			us62TB_send_data = usTemp_PCB_cmd;   // 仅仅用来测试
-			//us62TB_send_data = 0x55AA;
+			//us62TB_send_data = usTemp_PCB_cmd;   // 仅仅用来测试
+			us62TB_send_data = 0xFFFF;
 			//PORTE.DR.BIT.B3 = !PORTE.DR.BIT.B3;
 			R_PG_RSPI_TransferAllData_C1(&us62TB_send_data, &us62TB_rec_data, 1);    // 发送上位机指令
 			us62TA_rec_data = us62TA_rec_history;   // 将数据接收走
@@ -92,7 +92,12 @@ void SPI_62TB_loop()
 	{
 		us62TB_send_data = (short)(st_pc_cmd.fpSailDeg * 100 + 1800);   // 按照协议的方式发送
 		R_PG_RSPI_TransferAllData_C1(&us62TB_send_data, &us62TB_rec_data, 1);    // 发送上位机指令
-		ucSPI_62TB_cmd = SPI_CHECK_62T;
+		usTemp_PCB_cmd++;
+		if(usTemp_PCB_cmd == 5)
+		{
+			ucSPI_62TB_cmd = SPI_SEND_CMD;
+			usTemp_PCB_cmd = 0;	
+		}
 	}
 
 

@@ -1,8 +1,8 @@
 -cpu=rx600
 -lang=c
--include="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG"
--include="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src"
--output=obj="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\Debug\Interrupt_CMT.obj"
+-include="E:\20160421框架内外框电机和上位机调试程序\62N\62NPDG"
+-include="E:\20160421框架内外框电机和上位机调试程序\62N\62NPDG\i_src"
+-output=obj="E:\20160421框架内外框电机和上位机调试程序\62N\62N\Debug\Interrupt_CMT.obj"
 -debug
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_CMT.c"
+"E:\20160421框架内外框电机和上位机调试程序\62N\62NPDG\i_src\Interrupt_CMT.c"
 -nologo

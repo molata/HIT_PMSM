@@ -15,12 +15,12 @@
 62T向62N发送指令
 角度
 {
-	AAXX XXXX XXXX XXXX        ((value * 100) + 1800)  : 编码的角度   
+	11XX XXXX XXXX XXXX        ((value * 100) + 1800)  : 编码的角度   
                                    (value - 1800)/100   : 实际的角度
 }
 速度
 {
-	55XX XXXX XXXX XXXX       (（value * 1000） + 6000  ： 编码的速度
+	00XX XXXX XXXX XXXX       (（value * 1000） + 6000  ： 编码的速度
                                    （value - 6000）/1000     : 实际的速度
 }
 

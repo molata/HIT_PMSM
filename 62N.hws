@@ -3,12 +3,12 @@
 [DATABASE_VERSION]
 "11.0" 
 [WORKSPACE_DETAILS]
-"62N" "E:\实验室资料\实验室项目\207项目\主控板调试\投机取巧的程序\62N" "E:\实验室资料\实验室项目\207项目\主控板调试\投机取巧的程序\62N\62N.hws" "RX" "Renesas RX Standard" 
+"62N" "E:\20160421框架内外框电机和上位机调试程序\62N" "E:\20160421框架内外框电机和上位机调试程序\62N\62N.hws" "RX" "Renesas RX Standard" 
 [SHARED_WORKSPACE_CONTROL_STATUS]
 "" "" "" 
 "" "" "" 
 [PROJECTS]
-"62N" "E:\实验室资料\实验室项目\207项目\主控板调试\投机取巧的程序\62N\62N" "E:\实验室资料\实验室项目\207项目\主控板调试\投机取巧的程序\62N\62N\62N.hwp" 0 
+"62N" "E:\20160421框架内外框电机和上位机调试程序\62N\62N" "E:\20160421框架内外框电机和上位机调试程序\62N\62N\62N.hwp" 0 
 [INFORMATION]
 "No workspace information available" 
 [SCRAP]
@@ -16,6 +16,7 @@
 [WORKSPACE_PROPERTIES]
 [HELP_FILES]
 "c:\program files (x86)\renesas\hew\tools\renesas\rx\1_2_0\hew\stdlib.chm" "C/C++ Standard Library Help" 1 
+"c:\program files\renesas\hew\tools\renesas\rx\1_2_0\hew\stdlib.chm" "C/C++ Standard Library Help" 0 
 [GENERAL_DATA_PROJECT]
 [USERMENUTOOLS]
 [CUSTOMPLACEHOLDERS]

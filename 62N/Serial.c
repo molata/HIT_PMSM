@@ -148,11 +148,13 @@ void laser_receive_loop()
 void laser_loop()
 {
 	/**** 解析扫描 ******/
+/**
 	if(ucLaser_rec_success == 1)
 	{
 		serial_decode(ucLaser_rec_bytes, &stLaser_decode, ucLaser_rec_bytes_len, 1);
 		ucLaser_rec_success = 0;
 	}
+**/
 	/*********   定时发送 **************/
 	if(ucLaser_success == 0)   // 自检状态
 	{
@@ -166,7 +168,7 @@ void laser_loop()
 	else if(ucLaser_success == 1)   // 自检通过
 	{
 		laser_time_count++;
-		if(laser_time_count > 29 )    //30ms发送一次
+		if(laser_time_count > 199 )    //30ms发送一次
 		{
 			if(laser_bind_count < 2)  // 装订状态
 			{
@@ -183,12 +185,7 @@ void laser_loop()
 				ucLaser_send_status = 2;  // 发送自检指令
 				laser_bind_count = 3;
 				laser_time_count = 0;
-			}
-			else if(laser_bind_count >= 5 )
-			{
-				laser_time_count = 0;	
-			}
-			
+			}	
 		}	
 	}
 	switch(ucLaser_send_status)          

@@ -618,7 +618,14 @@
 [WINDOW_POSITION_STATE_DATA_VD3]
 [WINDOW_POSITION_STATE_DATA_VD4]
 [WINDOW_Z_ORDER]
-"E:\实验室资料\实验室项目\207项目\主控板调试\投机取巧的程序\62N\62N\HIT_SPI.c" 
+"E:\20160421框架内外框电机和上位机调试程序\62N\62N\HIT_SPI.c" 
+"E:\20160421框架内外框电机和上位机调试程序\62N\62N\HIT_cmt1.c" 
+"E:\20160421框架内外框电机和上位机调试程序\62N\62N\HIT_cmt0.c" 
+"E:\20160421框架内外框电机和上位机调试程序\62N\62NPDG\i_src\Interrupt_CMT.c" 
+"E:\20160421框架内外框电机和上位机调试程序\62N\62N\Serial.c" 
+"E:\20160421框架内外框电机和上位机调试程序\62N\62N\HIT_alarmnew.c" 
+"E:\20160421框架内外框电机和上位机调试程序\62N\62N\62N.c" 
+"E:\20160421框架内外框电机和上位机调试程序\62N\62N\resetprg.c" 
 [TARGET_NAME]
 "RX600 E1/E20 SYSTEM" "" 0 
 [STATUSBAR_STATEINFO_VD1]
@@ -641,8 +648,8 @@
 "SBK_TAR_EMUE100|Exception" 1 
 "SBK_TAR_EMUE100|BreakCondition" 1 
 "SBK_TAR_EMUE100|TaskID" 1 
-"SBK_TAR_EMUE100|PC" 1 
 "SBK_TAR_EMUE100|ExecutionTime" 1 
+"SBK_TAR_EMUE100|PC" 1 
 [STATUSBAR_DEBUGGER_PANESTATE_VD2]
 [STATUSBAR_DEBUGGER_PANESTATE_VD3]
 [STATUSBAR_DEBUGGER_PANESTATE_VD4]

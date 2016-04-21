@@ -27,19 +27,19 @@ void SPI_62TA_loop()
 		//if(ucSPI_Check_count > 10)
 		//{
 			R_PG_RSPI_TransferAllData_C0(&us62TA_send_data, &us62TA_rec_history, 1);    // 发送上位机指令
-			us62TA_rec_data = us62TA_rec_history;   // 将数据接收走
-			us62TA_rec_history = us62TA_rec_history && 0xFF000000;
-			if(us62TA_rec_history != 0x55000000)
+			if((us62TA_rec_history >> 14) == (0x000F >> 2))
 			{
+				us62TA_rec_data = us62TA_rec_history - (0x000F << 14);   // 将数据接收走
 				stSerial_data.elevation_deg = ((float)us62TA_rec_data - 1800) / 100;
 			}
-			else if(us62TA_rec_history != 0xAA000000)
+			else if((us62TA_rec_history >> 14) == 0X0000)
 			{
+				us62TA_rec_data = us62TA_rec_history;
 				stSerial_data.elevation_view_deg_speed = ((float)us62TA_rec_data - 6000) / 1000;
 			}
 			
 			us62TA_rec_history = us62TA_rec_data;
-			stSerial_data.elevation_deg = ((float)(us62TA_rec_data) - 1800)/ 100;     // 更新角度值
+			//stSerial_data.elevation_deg = ((float)(us62TA_rec_data) - 1800)/ 100;     // 更新角度值
 		//}
 	}
 	else if (ucSPI_62TA_cmd == SPI_SEND_CMD)
@@ -73,20 +73,18 @@ void SPI_62TB_loop()
 			//us62TB_send_data = usTemp_PCB_cmd;   // 仅仅用来测试
 			us62TB_send_data = 0xFFFF;
 			//PORTE.DR.BIT.B3 = !PORTE.DR.BIT.B3;
-			R_PG_RSPI_TransferAllData_C1(&us62TB_send_data, &us62TB_rec_data, 1);    // 发送上位机指令
-			us62TA_rec_data = us62TA_rec_history;   // 将数据接收走
-			us62TA_rec_history = us62TA_rec_history && 0xFF000000;
-			if(us62TA_rec_history != 0x55000000)
+			R_PG_RSPI_TransferAllData_C1(&us62TB_send_data, &us62TB_rec_history, 1);    // 发送上位机指令
+			if((us62TB_rec_history >> 14) == (0x000F >> 2))
 			{
-				stSerial_data.sheer_deg = ((float)us62TB_rec_data - 1800) / 100;
+				us62TB_rec_data = us62TB_rec_history - (0x000F << 14);   // 将数据接收走
+				stSerial_data.elevation_deg = ((float)us62TB_rec_data - 1800) / 100;
 			}
-			else if(us62TA_rec_history != 0xAA000000)
+			else if((us62TB_rec_history >> 14) == 0X0000)
 			{
-				stSerial_data.sheer_view_deg_speed = ((float)us62TB_rec_data - 6000) / 1000;
+				us62TB_rec_data = us62TB_rec_history;
+				stSerial_data.elevation_view_deg_speed = ((float)us62TA_rec_data - 6000) / 1000;
 			}
-			usTemp_PCB_cmd++;
 			us62TB_rec_history = us62TB_rec_data;
-			stSerial_data.elevation_deg = ((float)(us62TB_rec_data) - 1800)/ 100;     // 更新角度值
 	}
 	else if (ucSPI_62TB_cmd == SPI_SEND_CMD)
 	{

@@ -27,16 +27,11 @@ void abort(void);
 unsigned char data[16] = {0};
 void main(void)
 {
-	//HIT_hardwaresetup();      // Ó²¼ş³õÊ¼»¯
-	System_setup();
-	Clock_setup();
-	SCI_setup();
-	CMT_setup(); 
-	spi_Setup();     // SPIÆô¶¯
-	spi1_Setup();
+	HIT_hardwaresetup();      // ç¡¬ä»¶åˆå§‹åŒ–
+
 	while(1)
 	{
-		SCI6.SCR.BIT.TE = 0X01;
+		
 	}
 }
 

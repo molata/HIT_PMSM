@@ -70,13 +70,13 @@ void serial_build_protocol(uchar *ucSerial_dataBits, uchar *ucSerial_bytes , uch
 *************************************************/
 //void serial_decode(const uchar *ucSerial_rec_bits, ST_SERIAL_DECODE *stSerial_decode, uchar ucByte_len);
 void serial_decode(const uchar *ucSerial_rec_bits, ST_SERIAL_DECODE *stSerial_decode, uchar ucByte_len, uchar ucMac_type);   //ucMac_type: 0: PC; 1: Laser
-
 void serial_decode_byte(const uchar ucCurrent_byte, ST_SERIAL_DECODE *stSerial_decode, uchar ucMac_type);
 /********************* 串口接收 **********************************/
 void serial_receive_loop();
 void laser_receive_loop();
-/********************* laser 解析 ********************************/       // 后期需要删除
-
+/********************* 串口发送 ********************************/       // 后期需要删除
+void serial_send_loop();
+void laser_send_loop();
 /*************************************************
 Function: // serial_u32toucArr
 Description: // 将四个字节的数转换成四个字节的数组

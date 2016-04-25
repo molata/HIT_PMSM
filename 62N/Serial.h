@@ -16,7 +16,9 @@ History: // 历史修改记录
 #define HIT_SERIAL
 #include "typedefine.h"
 #include "HIT_common.h"
-
+#define SERIAL_IDLE 0
+#define SERIAL_RECEVING 1
+#define SERIAL_FINISH 2
 
 typedef struct st_serial_decode{
 	uchar ucSerial_decode_status;     // 1. headline1; 2. headline2; 3. data length; 4. data 5. checkout
@@ -70,12 +72,12 @@ void serial_build_protocol(uchar *ucSerial_dataBits, uchar *ucSerial_bytes , uch
 *************************************************/
 //void serial_decode(const uchar *ucSerial_rec_bits, ST_SERIAL_DECODE *stSerial_decode, uchar ucByte_len);
 void serial_decode(const uchar *ucSerial_rec_bits, ST_SERIAL_DECODE *stSerial_decode, uchar ucByte_len, uchar ucMac_type);   //ucMac_type: 0: PC; 1: Laser
+
 void serial_decode_byte(const uchar ucCurrent_byte, ST_SERIAL_DECODE *stSerial_decode, uchar ucMac_type);
 /********************* 串口接收 **********************************/
 void serial_receive_loop();
 void laser_receive_loop();
-/********************* 串口发送 ********************************/       // 后期需要删除
-void serial_send_loop();
+/********************* laser 解析 ********************************/       // 后期需要删除
 void laser_send_loop();
 /*************************************************
 Function: // serial_u32toucArr

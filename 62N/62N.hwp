@@ -3,14 +3,14 @@
 [DATABASE_VERSION]
 "2.8" 
 [PROJECT_DETAILS]
-"62N" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62N.hwp" "RX" "Renesas RX Standard" "Application" "RX600" "RX62N" 
+"62N" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\62N.hwp" "RX" "Renesas RX Standard" "Application" "RX600" "RX62N" 
 [INFORMATION]
 "No project information available" 
 [TOOL_CHAIN]
 "Renesas RX Standard Toolchain" "1.2.0.0" 
 [CONFIGURATIONS]
-"Debug" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\Debug" 
-"Release" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\Release" 
+"Debug" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\Debug" 
+"Release" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\Release" 
 [BUILD_PHASES]
 "Renesas OptLinker" 1 
 "Renesas RX Assembler" 1 
@@ -116,122 +116,122 @@
 "Object file" "Renesas OptLinker" "Renesas RX Assembler" 
 "Object file" "Renesas OptLinker" "Renesas RX C/C++ Compiler" 
 [PROJECT_FILES]
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RIIC\R_PG_I2C_C0.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C0.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C1.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C0.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C5.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C6.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SYSTEM\R_PG_Clock.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_CMT.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_INTC.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SCI.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62N.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_out_fuc.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_run_fuc.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_trans_fuc.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_FNnum.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_Fn_read_ee_addr_fnc.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBC_intail_par_obser.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBC_intial_cal.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBC_intial_par.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBC_state.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBW_state.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_PNnum.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_SNnum.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_SPI.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_SPI.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_address.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_address.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_alarm.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_alarmnew.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_biaoding.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_check_table.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_check_table.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_check_table_ab.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_cmt0.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_cmt0intfunc.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_cmt1.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_common.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_common.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_controlsystem_servoon.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_controlsystem_servoon.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_current_obeser_state.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_current_obser_intial.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_current_pi.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_current_pi.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_ff_cal_gain.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_fluxweakingcontrol.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_get_sci_buf_data.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_gpt0cmvintfunc.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_gpt0cmvintfunc.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_hardwaresetup.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_hardwaresetup.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_highimp.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_highimp.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_identification.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_identification.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_lpf_cal_gain.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_make_angle.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_make_angle.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_make_angleab.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_make_angleab.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_mechanicalpi.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_mechanicalpi.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_mode_10_bd.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_moth_line_vector.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_par_initial.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_par_initial.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_par_write_to_ee.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_parameter.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_positioncontrol.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_positioncontrol.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_read_sci_address.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_read_servo_state.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_ref_lpf_cal_gain.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_ref_lpf_fuc.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_ref_lpf_iref.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_releasepower.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_releasepowernew.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_run_mode_5_fnc.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_send_ee_data.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_servo_on_first.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_servo_on_first.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_servofirst.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_servofirst.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_servoon.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_servoon.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_shouchaoqi.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_shouchaoqi.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_shouchaoqi_angle.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_shouchaoqi_con_servon.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_spacevectorcontrol.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_spacevectorcontrol.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_systemparameter.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_unittransfer.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_vectorcontrol.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_vectorcontrol.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_virtualphotoeletric.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_virtualphotoeletric.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_write_U_angle_to_EE.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_write_ee_addr.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_zeroto2hundredms.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_zeroto2hundredms.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\Serial.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\Serial.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\dbsct.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\hit_ref_lpf_pref.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\iodefine.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\lowsrc.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\resetprg.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\sbrk.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\sbrk.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\stacksct.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\typedefine.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vect.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\RIIC\R_PG_I2C_C0.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\RSPI\R_PG_RSPI_C0.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\RSPI\R_PG_RSPI_C1.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\SCI\R_PG_SCI_C0.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\SCI\R_PG_SCI_C5.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\SCI\R_PG_SCI_C6.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\SYSTEM\R_PG_Clock.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\i_src\Interrupt_CMT.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\i_src\Interrupt_INTC.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\i_src\Interrupt_SCI.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\62N.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_DA_out_fuc.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_DA_run_fuc.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_DA_trans_fuc.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_FNnum.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_Fn_read_ee_addr_fnc.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBC_intail_par_obser.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBC_intial_cal.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBC_intial_par.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBC_state.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBW_state.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_PNnum.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_SNnum.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_SPI.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_SPI.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_address.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_address.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_alarm.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_alarmnew.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_biaoding.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_check_table.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_check_table.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_check_table_ab.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_cmt0.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_cmt0intfunc.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_cmt1.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_common.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_common.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_controlsystem_servoon.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_controlsystem_servoon.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_current_obeser_state.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_current_obser_intial.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_current_pi.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_current_pi.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_ff_cal_gain.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_fluxweakingcontrol.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_get_sci_buf_data.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_gpt0cmvintfunc.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_gpt0cmvintfunc.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_hardwaresetup.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_hardwaresetup.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_highimp.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_highimp.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_identification.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_identification.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_lpf_cal_gain.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_make_angle.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_make_angle.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_make_angleab.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_make_angleab.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_mechanicalpi.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_mechanicalpi.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_mode_10_bd.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_moth_line_vector.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_par_initial.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_par_initial.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_par_write_to_ee.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_parameter.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_positioncontrol.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_positioncontrol.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_read_sci_address.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_read_servo_state.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_ref_lpf_cal_gain.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_ref_lpf_fuc.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_ref_lpf_iref.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_releasepower.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_releasepowernew.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_run_mode_5_fnc.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_send_ee_data.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_servo_on_first.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_servo_on_first.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_servofirst.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_servofirst.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_servoon.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_servoon.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_shouchaoqi.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_shouchaoqi.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_shouchaoqi_angle.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_shouchaoqi_con_servon.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_spacevectorcontrol.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_spacevectorcontrol.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_systemparameter.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_unittransfer.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_vectorcontrol.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_vectorcontrol.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_virtualphotoeletric.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_virtualphotoeletric.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_write_U_angle_to_EE.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_write_ee_addr.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_zeroto2hundredms.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_zeroto2hundredms.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\Serial.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\Serial.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\dbsct.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\hit_ref_lpf_pref.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\iodefine.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\lowsrc.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\resetprg.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\sbrk.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\sbrk.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\stacksct.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\typedefine.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vect.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" "User" "C source file" 2 
 [FOLDER]
 "AddFromPDG" "AddFromPDG" 
 "C header file" "C header file" 
@@ -241,308 +241,299 @@
 [ON_DEMAND_COMPONENTS_LOADED]
 [SYNC_SESSION_NAMES]
 [SESSIONS]
-"DefaultSession" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\DefaultSession.hsf" 0 
+"DefaultSession" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\DefaultSession.hsf" 0 
 [GENERAL_DATA_SESSION_DefaultSession]
 [OPTIONS_Debug_Renesas OptLinker]
-"Single Shot" "01f4748cf6e91d10" 8 
+"Single Shot" "0bc06cc094f91d10" 8 
 [OPTIONS_Debug_Renesas RX Assembler]
 "Assembly source file" "06e734e4e4781d10" 7 
 "Linkage symbol file" "06e734e4e4781d10" 7 
 [OPTIONS_Debug_Renesas RX C/C++ Compiler]
 "C source file" "06e734e4e4781d10" 6 
 "C++ source file" "044acfdba3491d10" 5 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "0288d0fa01e91d10" 4 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RIIC\R_PG_I2C_C0.c" "0bf622fa01e91d10" 4 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C0.c" "0df972fa01e91d10" 4 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C1.c" "0ffcc2fa01e91d10" 4 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C0.c" "048b21fa01e91d10" 4 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C5.c" "068e71fa01e91d10" 4 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C6.c" "09f3d1fa01e91d10" 4 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SYSTEM\R_PG_Clock.c" "008580fa01e91d10" 4 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_CMT.c" "010023fa01e91d10" 4 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_INTC.c" "030373fa01e91d10" 4 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SCI.c" "0678c3fa01e91d10" 4 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62N.c" "023eaa4c96b91d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_out_fuc.c" "03d52b4c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_run_fuc.c" "047d9b4c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_trans_fuc.c" "0bb32c4c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_Fn_read_ee_addr_fnc.c" "0e30ac4c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBC_intail_par_obser.c" "03a12d4c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBC_intial_cal.c" "008f8d4c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBC_intial_par.c" "07c51e4c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBC_state.c" "0c279e4c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBW_state.c" "00261f4c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_SPI.c" "005b8f4c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_address.c" "03d7005c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_alarm.c" "00b5705c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_alarmnew.c" "02cfe05c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_check_table.c" "04d9615c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_cmt0.c" "093be15c96b91d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_cmt1.c" "0d2a625c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_common.c" "0ec1e25c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_controlsystem_servoon.c" "015e535c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_current_obeser_state.c" "02f5d35c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_current_obser_intial.c" "0572545c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_current_pi.c" "0ad3d45c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_ff_cal_gain.c" "012a555c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_fluxweakingcontrol.c" "02c1d55c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_get_sci_buf_data.c" "02f6465c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_gpt0cmvintfunc.c" "0fc4b65c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_hardwaresetup.c" "0e87275c96b91d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_highimp.c" "0d4a975c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_identification.c" "0f54185c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_lpf_cal_gain.c" "071d985c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_make_angle.c" "0a99195c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_make_angleab.c" "0ad5b95c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_mechanicalpi.c" "029e3a5c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_mode_10_bd.c" "07ffba5c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_moth_line_vector.c" "05403b5c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_par_initial.c" "093fab5c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_par_write_to_ee.c" "078f1c5c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_positioncontrol.c" "046d8c5c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_read_sci_address.c" "014bfc5c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_read_servo_state.c" "03557d5c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_ref_lpf_cal_gain.c" "08b6fd5c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_ref_lpf_fuc.c" "08eb6e5c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_ref_lpf_iref.c" "0af5ee5c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_releasepower.c" "0b9d5f5c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_releasepowernew.c" "0bc2df5c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_run_mode_5_fnc.c" "0a85406c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_send_ee_data.c" "0d02c06c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_servo_on_first.c" "0101416c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_servofirst.c" "048db16c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_servoon.c" "0340326c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_shouchaoqi.c" "0203a26c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_shouchaoqi_angle.c" "08d6236c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_shouchaoqi_con_servon.c" "0627936c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_spacevectorcontrol.c" "0d6d146c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_vectorcontrol.c" "0e05946c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_virtualphotoeletric.c" "0e3a056c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_write_U_angle_to_EE.c" "0e6f756c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_write_ee_addr.c" "0089f56c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_zeroto2hundredms.c" "0ec9666c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\Serial.c" "09d9f66c96b91d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\dbsct.c" "089c676c96b91d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\hit_ref_lpf_pref.c" "06ecd76c96b91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" "0784586c96b91d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\resetprg.c" "082cc86c96b91d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\sbrk.c" "0c1b496c96b91d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" "02fec96c96b91d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "0384c7e094f91d10" 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\RIIC\R_PG_I2C_C0.c" "0bae59e094f91d10" 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\RSPI\R_PG_RSPI_C0.c" "02edb9e094f91d10" 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\RSPI\R_PG_RSPI_C1.c" "08aa1ae094f91d10" 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\SCI\R_PG_SCI_C0.c" "0c9828e094f91d10" 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\SCI\R_PG_SCI_C5.c" "044a88e094f91d10" 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\SCI\R_PG_SCI_C6.c" "029af8e094f91d10" 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\SYSTEM\R_PG_Clock.c" "0db767e094f91d10" 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\i_src\Interrupt_CMT.c" "0e677ae094f91d10" 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\i_src\Interrupt_INTC.c" "0619dae094f91d10" 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\i_src\Interrupt_SCI.c" "0b633be094f91d10" 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\62N.c" "036c0fc094f91d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_DA_out_fuc.c" "0b0e6fc094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_DA_run_fuc.c" "0fe5cfc094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_DA_trans_fuc.c" "05b220d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_Fn_read_ee_addr_fnc.c" "0b7f70d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBC_intail_par_obser.c" "00d9d0d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBC_intial_cal.c" "069631d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBC_intial_par.c" "0c5391d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBC_state.c" "004be1d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBW_state.c" "077a42d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_SPI.c" "0ea9a2d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_address.c" "05e803d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_alarm.c" "0c1863d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_alarmnew.c" "02e4c3d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_check_table.c" "06cc14d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_cmt0.c" "0aa474d094f91d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_cmt1.c" "0071d4d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_common.c" "05cb25d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_controlsystem_servoon.c" "0cfa85d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_current_obeser_state.c" "02c7e5d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_current_obser_intial.c" "06af36d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_current_pi.c" "0e41a6d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_ff_cal_gain.c" "041ef6d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_fluxweakingcontrol.c" "096857d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_get_sci_buf_data.c" "00a7b7d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_gpt0cmvintfunc.c" "07d618d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_hardwaresetup.c" "0c2178d094f91d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_highimp.c" "02fdc8d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_identification.c" "092d29d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_lpf_cal_gain.c" "03b399d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_make_angle.c" "080ee9d094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_make_angleab.c" "0f3d4ad094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_mechanicalpi.c" "050aaad094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_mode_10_bd.c" "0c390bd094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_moth_line_vector.c" "02066bd094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_par_initial.c" "0aa7cbd094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_par_write_to_ee.c" "00742cd094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_positioncontrol.c" "06318cd094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_read_sci_address.c" "0f45ecd094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_read_servo_state.c" "06844dd094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_ref_lpf_cal_gain.c" "0db3add094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_ref_lpf_fuc.c" "06d70ed094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_ref_lpf_iref.c" "0c946ed094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_releasepower.c" "05b8ced094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_releasepowernew.c" "0ce72fd094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_run_mode_5_fnc.c" "03278fd094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_send_ee_data.c" "09e3efd094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_servo_on_first.c" "019540e094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_servofirst.c" "08c4a0e094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_servoon.c" "007601e094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_shouchaoqi.c" "07a561e094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_shouchaoqi_angle.c" "0f47c1e094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_shouchaoqi_con_servon.c" "04a122e094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_spacevectorcontrol.c" "0a6e72e094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_vectorcontrol.c" "0fb8d2e094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_virtualphotoeletric.c" "08dc33e094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_write_U_angle_to_EE.c" "0e9993e094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_write_ee_addr.c" "064bf3e094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_zeroto2hundredms.c" "0eec54e094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\Serial.c" "069eb4e094f91d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\dbsct.c" "002525e094f91d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\hit_ref_lpf_pref.c" "075485e094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" "0ff5e5e094f91d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\resetprg.c" "063546e094f91d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\sbrk.c" "0ed6a6e094f91d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" "051607e094f91d10" 3 
 [OPTIONS_Debug_Renesas RX C/C++ Library Generator]
 "Single Shot" "06e734e4e4781d10" 1 
 [OPTIONS_Debug_Renesas RX Configurator]
-"Single Shot" "001f33ea01e91d10" 9 
+"Single Shot" "0fc243c094f91d10" 9 
 [OPTIONS_Debug]
 "" 0 
 "[S|OUTPUTPATH|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] [V|VERSION|1] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|LANG|C] [B|RUNTIME|1] [B|CTYPE|0] [B|MATH|0] [B|MATHF|0] [B|STDARG|0] [B|STDIO|1] [B|STDLIB|1] [B|STRING|1] [B|IOS|0] [B|NEW|1] [B|COMPLEX|0] [B|CPPSTRING|0] [S|MODE|BUILD/CHANGED]" 1 
 "[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON4] [S|OUTPUTPATH|^"$(CONFIGDIR)^"] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 9 
 "[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 7 
 "[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24]" 6 
-"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|INCLUDE|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src^"]" 4 
-"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|INCLUDE|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src^"|^"C:\WorkSpace\62N\62NPDG^"|^"C:\WorkSpace\62N\62NPDG\i_src^"|^"E:\20160421框架内外框电机和上位机调试程序\62N\62NPDG^"|^"E:\20160421框架内外框电机和上位机调试程序\62N\62NPDG\i_src^"]" 2 
-"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|INCLUDE|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62NPDG\i_src^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src^"|^"C:\WorkSpace\62N\62NPDG^"|^"C:\WorkSpace\62N\62NPDG\i_src^"|^"E:\20160421框架内外框电机和上位机调试程序\62N\62NPDG^"|^"E:\20160421框架内外框电机和上位机调试程序\62N\62NPDG\i_src^"]" 3 
+"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|INCLUDE|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src^"|^"C:\WorkSpace\62N\62NPDG^"|^"C:\WorkSpace\62N\62NPDG\i_src^"|^"E:\20160421框架内外框电机和上位机调试程序\62N\62NPDG^"|^"E:\20160421框架内外框电机和上位机调试程序\62N\62NPDG\i_src^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\i_src^"]" 2 
+"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|INCLUDE|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62NPDG\i_src^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src^"|^"C:\WorkSpace\62N\62NPDG^"|^"C:\WorkSpace\62N\62NPDG\i_src^"|^"E:\20160421框架内外框电机和上位机调试程序\62N\62NPDG^"|^"E:\20160421框架内外框电机和上位机调试程序\62N\62NPDG\i_src^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\i_src^"]" 3 
+"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|INCLUDE|^"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\i_src^"]" 4 
 "[V|VERSION|1] [S|LANG|CPP] [B|SJIS|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|DEBUG|1] [B|SIZE|1] [B|MAP|0] [I|INLINE|100] [I|LOOP|2] [S|MISRA2004|ALL] [S|MISRA2004RULEFILE|^"$(CONFIGDIR)\$(PROJECTNAME).rde^"] [S|CPU|RX600] [S|BASE|00000000=NONE] [I|PID|16]
 " 5 
-"[V|VERSION|6] [S|INPUTLIBRARY|^"C:\Renesas\PDG2\lib\RX62N\RX62N_library_LQFP_100.lib^"] [S|PRELINK|SKIP] [S|FORM|STYPE] [S|BYTE_COUNT_VALUE|FF] [B|DEBUG|1] [S|ROM|(D,R)|(D_1,R_1)|(D_2,R_2)] [S|CRC|NONE|DEFAULT|00000000] [B|LIST|1] [S|LIST|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [S|SHOW|METHODCUSTOM|] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] [I|SPACE|^"FF^"] [B|OPTIMIZE|0] [S|START|B_1,R_1,B_2,R_2,B,R,P,C,C$DSEC,C$BSEC,C_1,C_2(00)|W_1,W_2,D,W,D_2,D_1,C$VECT,L,SI(011110000)|PResetPRG(0FFFF8000)|FIXEDVECT(0FFFFFFD0)] [S|MEMORY|HIGH]
-" 8 
+"[V|VERSION|6] [S|INPUTLIBRARY|^"C:\Renesas\PDG2\lib\RX62N\RX62N_library_LQFP_100.lib^"] [S|PRELINK|SKIP] [S|FORM|STYPE] [S|BYTE_COUNT_VALUE|FF] [B|DEBUG|1] [S|ROM|(D,R)|(D_1,R_1)|(D_2,R_2)] [S|CRC|NONE|DEFAULT|00000000] [B|LIST|1] [S|LIST|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [S|SHOW|METHODCUSTOM|] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] [I|SPACE|^"FF^"] [B|OPTIMIZE|0] [S|START|P,C,C$DSEC,C$BSEC,C_1,C_2,W_1,W_2,D,W,D_2,D_1,C$VECT,L(00)|B_1,R_1,B_2,R_2,B,R,SI(010000)|PResetPRG(0FFFF8000)|FIXEDVECT(0FFFFFFD0)] [S|MEMORY|HIGH]" 8 
 [EXCLUDED_FILES_Debug]
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" 
 [LINKAGE_ORDER_Debug]
 [GENERAL_DATA_CONFIGURATION_Debug]
 [OPTIONS_Release_Renesas OptLinker]
-"Single Shot" "0b08a3ea01e91d10" 5 
+"Single Shot" "007ab3c094f91d10" 5 
 [OPTIONS_Release_Renesas RX Assembler]
 "Assembly source file" "06e734e4e4781d10" 4 
 "Linkage symbol file" "06e734e4e4781d10" 4 
 [OPTIONS_Release_Renesas RX C/C++ Compiler]
 "C source file" "06e734e4e4781d10" 2 
 "C++ source file" "044acfdba3491d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "0e2322da01e91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RIIC\R_PG_I2C_C0.c" "036289da01e91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C0.c" "067e5bda01e91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C1.c" "07a53dda01e91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C0.c" "0f5af3da01e91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C5.c" "0f1fc5da01e91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C6.c" "01c8a7da01e91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SYSTEM\R_PG_Clock.c" "0c8940da01e91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_CMT.c" "094f0fda01e91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_INTC.c" "0be8e0ea01e91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SCI.c" "001f33ea01e91d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62N.c" "06e734e4e4781d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_out_fuc.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_run_fuc.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_DA_trans_fuc.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_Fn_read_ee_addr_fnc.c" "0b77b1db55b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBC_intail_par_obser.c" "0d255e9175b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBC_intial_cal.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBC_intial_par.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBC_state.c" "0b14adce65b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_OBW_state.c" "016946fe65b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_SPI.c" "0b7ab329a4f81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_address.c" "0a8d8e3fd6691d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_alarm.c" "007e5191b4f81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_alarmnew.c" "09d599b1b4f81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_check_table.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_cmt0.c" "054dd816aa781d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_cmt1.c" "0e559aa034691d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_common.c" "066a06b876691d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_controlsystem_servoon.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_current_obeser_state.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_current_obser_intial.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_current_pi.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_ff_cal_gain.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_fluxweakingcontrol.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_get_sci_buf_data.c" "045bceeb55b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_gpt0cmvintfunc.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_hardwaresetup.c" "0998c978da781d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_highimp.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_identification.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_lpf_cal_gain.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_make_angle.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_make_angleab.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_mechanicalpi.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_mode_10_bd.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_moth_line_vector.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_par_initial.c" "0d9f7a0c55b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_par_write_to_ee.c" "00aae14c55b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_positioncontrol.c" "0c33b93375b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_read_sci_address.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_read_servo_state.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_ref_lpf_cal_gain.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_ref_lpf_fuc.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_ref_lpf_iref.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_releasepower.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_releasepowernew.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_run_mode_5_fnc.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_send_ee_data.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_servo_on_first.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_servofirst.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_servoon.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_shouchaoqi.c" "0d0e697c55b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_shouchaoqi_angle.c" "05fec8ac55b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_shouchaoqi_con_servon.c" "06c0665b55b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_spacevectorcontrol.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_vectorcontrol.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_virtualphotoeletric.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_write_U_angle_to_EE.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_write_ee_addr.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\HIT_zeroto2hundredms.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\Serial.c" "0ea53aedba781d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\dbsct.c" "06e734e4e4781d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\hit_ref_lpf_pref.c" "087d515f75b81d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\intprg.c" "06e734e4e4781d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\resetprg.c" "06e734e4e4781d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\sbrk.c" "06e734e4e4781d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\vecttbl.c" "06e734e4e4781d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "0019b1b094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\RIIC\R_PG_I2C_C0.c" "0ab0c9b094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\RSPI\R_PG_RSPI_C0.c" "037babb094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\RSPI\R_PG_RSPI_C1.c" "0bb39db094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\SCI\R_PG_SCI_C0.c" "07ee93b094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\SCI\R_PG_SCI_C5.c" "0123b5b094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\SCI\R_PG_SCI_C6.c" "0f0aa7b094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\SYSTEM\R_PG_Clock.c" "0933dfa094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\i_src\Interrupt_CMT.c" "030c7fb094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\i_src\Interrupt_INTC.c" "096f51c094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62NPDG\i_src\Interrupt_SCI.c" "0fc243c094f91d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\62N.c" "06e734e4e4781d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_DA_out_fuc.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_DA_run_fuc.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_DA_trans_fuc.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_Fn_read_ee_addr_fnc.c" "0b77b1db55b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBC_intail_par_obser.c" "0d255e9175b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBC_intial_cal.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBC_intial_par.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBC_state.c" "0b14adce65b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_OBW_state.c" "016946fe65b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_SPI.c" "0b7ab329a4f81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_address.c" "0a8d8e3fd6691d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_alarm.c" "007e5191b4f81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_alarmnew.c" "09d599b1b4f81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_check_table.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_cmt0.c" "054dd816aa781d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_cmt1.c" "0e559aa034691d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_common.c" "066a06b876691d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_controlsystem_servoon.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_current_obeser_state.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_current_obser_intial.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_current_pi.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_ff_cal_gain.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_fluxweakingcontrol.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_get_sci_buf_data.c" "045bceeb55b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_gpt0cmvintfunc.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_hardwaresetup.c" "0998c978da781d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_highimp.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_identification.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_lpf_cal_gain.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_make_angle.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_make_angleab.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_mechanicalpi.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_mode_10_bd.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_moth_line_vector.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_par_initial.c" "0d9f7a0c55b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_par_write_to_ee.c" "00aae14c55b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_positioncontrol.c" "0c33b93375b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_read_sci_address.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_read_servo_state.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_ref_lpf_cal_gain.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_ref_lpf_fuc.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_ref_lpf_iref.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_releasepower.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_releasepowernew.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_run_mode_5_fnc.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_send_ee_data.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_servo_on_first.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_servofirst.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_servoon.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_shouchaoqi.c" "0d0e697c55b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_shouchaoqi_angle.c" "05fec8ac55b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_shouchaoqi_con_servon.c" "06c0665b55b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_spacevectorcontrol.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_vectorcontrol.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_virtualphotoeletric.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_write_U_angle_to_EE.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_write_ee_addr.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\HIT_zeroto2hundredms.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\Serial.c" "0ea53aedba781d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\dbsct.c" "06e734e4e4781d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\hit_ref_lpf_pref.c" "087d515f75b81d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\intprg.c" "06e734e4e4781d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\resetprg.c" "06e734e4e4781d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\sbrk.c" "06e734e4e4781d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\vecttbl.c" "06e734e4e4781d10" 2 
 [OPTIONS_Release_Renesas RX C/C++ Library Generator]
 "Single Shot" "06e734e4e4781d10" 1 
 [OPTIONS_Release_Renesas RX Configurator]
-"Single Shot" "001f33ea01e91d10" 6 
+"Single Shot" "0fc243c094f91d10" 6 
 [OPTIONS_Release]
 "" 0 
 "[S|OUTPUTPATH|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] [V|VERSION|1] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|LANG|C] [B|RUNTIME|1] [B|CTYPE|0] [B|MATH|0] [B|MATHF|0] [B|STDARG|0] [B|STDIO|1] [B|STDLIB|1] [B|STRING|1] [B|IOS|0] [B|NEW|1] [B|COMPLEX|0] [B|CPPSTRING|0] [S|MODE|BUILD/CHANGED]" 1 

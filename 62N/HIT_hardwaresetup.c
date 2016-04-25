@@ -18,13 +18,6 @@ void SCI_setup()    //初始化SCI
 	R_PG_SCI_Set_C0();
 	R_PG_SCI_Set_C5();
 	R_PG_SCI_Set_C6();   
-	SCI6.SCR.BIT.RE = 0X01;  // 手动接收使能	
-/**
-	if(SCI6.SCR.BIT.RIE)
-	{
-		SCI6.SCR.BIT.RIE = 0X01; // 手动接收中断使能
-	}
-***/
 }
 void Clock_setup()   //初始化时钟
 {

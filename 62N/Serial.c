@@ -44,6 +44,7 @@ uchar ucLaser_query_datas[12] = {0};    // 激光板发送的所有数据
 uchar ucLaser_send_bytes_len = 0;       // 向激光板发送的数据长度
 uchar ucLaser_send_byte = 0;            // 激光板发送的字节
 uchar ucLaser_send_count = 0;           // 记录激光板当前发送的字节是哪一帧
+uint uiLaser_send_pageback_count = 0;   // 记录当前向激光板发送的是第几帧
 uchar ucLaser_send_status = 0;   // Laser send loop status  0: 什么都不发送； 1. 发送自检指令；  2. 发送上位机的控制指令
 uchar ucLaser_send_cmd = 0;            // 控制激光板是否发送， 0：发送， 1：发送
 uint laser_time_count = 0;            // 定时计数器，1000个计数发送一次初始化 ， 10个计数发送一次查询
@@ -218,17 +219,19 @@ void laser_send_loop()
 				ucLaser_send_byte = ucLaser_query_bytes[ucLaser_send_count - 2];
 				SCI6.TDR = ucLaser_send_byte;
 			}
-			if(ucLaser_send_count - 2 == ucLaser_send_bytes_len)   // 发送完毕
+			if(ucLaser_send_count - 2 == ucLaser_send_bytes_len )   // 发送完毕
 			{
 				SCI6.SCR.BIT.TEIE = 0X01;	
 			}
-			if(ucLaser_send_count - 2 > ucLaser_send_bytes_len)   // 发送完毕
+			if(ucLaser_send_count - 2 > ucLaser_send_bytes_len )   // 发送完毕
 			{
 				SCI6.SCR.BIT.TE = 0X00;
 				SCI6.SCR.BIT.TEIE = 0X00;
 				SCI6.SCR.BIT.RE = 0X01;
 				ucLaser_send_cmd = 0;
 				ucLaser_send_count = 0;
+				
+				uiLaser_send_pageback_count++;                 // 发送帧计数+1
 			}
 			
 		}

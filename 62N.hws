@@ -3,12 +3,12 @@
 [DATABASE_VERSION]
 "11.0" 
 [WORKSPACE_DETAILS]
-"62N" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N.hws" "RX" "Renesas RX Standard" 
+"62N" "E:\实验室资料\实验室项目\207项目\主控板调试\62N" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N.hws" "RX" "Renesas RX Standard" 
 [SHARED_WORKSPACE_CONTROL_STATUS]
 "" "" "" 
 "" "" "" 
 [PROJECTS]
-"62N" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nbuffer\62N\62N.hwp" 0 
+"62N" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62N\62N.hwp" 0 
 [INFORMATION]
 "No workspace information available" 
 [SCRAP]

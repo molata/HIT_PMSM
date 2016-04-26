@@ -32,7 +32,7 @@ void Cmt0IntFunc()   // 5us
 	//serial_receive_loop();
 	laser_receive_loop();
 	ucLaser_send_time++;
-	if(ucLaser_send_time >= 8)
+	if(ucLaser_send_time >= 10)
 	{
 		ucLaser_send_time = 0;
 		laser_send_loop();

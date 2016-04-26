@@ -1,0 +1,23 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"1.2" 
+[CURRENT_PROJECT]
+"62nConnection" 
+[GENERAL_DATA]
+[BREAKPOINTS]
+[OPEN_WORKSPACE_FILES]
+"E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\62nConnection.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\HIT_common.h" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\resetprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Serial.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62NPDG\i_src\Interrupt_INTC.c" 
+[WORKSPACE_FILE_STATES]
+"E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62NPDG\i_src\Interrupt_INTC.c" 50 50 1345 299 0 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\62nConnection.c" -8 -30 1486 462 1 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\HIT_common.h" 25 25 1479 487 0 0 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Serial.c" 50 50 1245 491 0 1 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\resetprg.c" 100 100 1270 467 0 2 
+[LOADED_PROJECTS]
+"62nConnection" 
+[END]

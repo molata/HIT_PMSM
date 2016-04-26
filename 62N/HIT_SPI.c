@@ -48,9 +48,9 @@ void SPI_62TA_loop()
 		us62TA_send_data = (short)(st_pc_cmd.fpPitchDeg * 100 + 1800);   // 按照协议的方式发送
 		R_PG_RSPI_TransferAllData_C0(&us62TA_send_data, &us62TA_rec_data, 1);    // 发送上位机指令
 		usTemp_PCA_cmd++;
-		if(usTemp_PCA_cmd == 5)
+		if(usTemp_PCA_cmd >= 5)
 		{
-			ucSPI_62TA_cmd = SPI_SEND_CMD;
+			ucSPI_62TA_cmd = SPI_CHECK_62T;
 			usTemp_PCA_cmd = 0;	
 		}
 	}
@@ -91,9 +91,9 @@ void SPI_62TB_loop()
 		us62TB_send_data = (short)(st_pc_cmd.fpSailDeg * 100 + 1800);   // 按照协议的方式发送
 		R_PG_RSPI_TransferAllData_C1(&us62TB_send_data, &us62TB_rec_data, 1);    // 发送上位机指令
 		usTemp_PCB_cmd++;
-		if(usTemp_PCB_cmd == 5)
+		if(usTemp_PCB_cmd >= 5)
 		{
-			ucSPI_62TB_cmd = SPI_SEND_CMD;
+			ucSPI_62TB_cmd = SPI_CHECK_62T;
 			usTemp_PCB_cmd = 0;	
 		}
 	}

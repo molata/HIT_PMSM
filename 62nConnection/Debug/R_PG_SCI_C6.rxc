@@ -1,8 +1,8 @@
 -cpu=rx600
 -lang=c
--include="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62NPDG"
--include="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62NPDG\i_src"
--output=obj="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\R_PG_SCI_C6.obj"
+-include="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG"
+-include="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src"
+-output=obj="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\R_PG_SCI_C6.obj"
 -debug
-"E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62NPDG\SCI\R_PG_SCI_C6.c"
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C6.c"
 -nologo

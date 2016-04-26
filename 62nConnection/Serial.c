@@ -169,7 +169,6 @@ void laser_loop()
 				laser_bind_count++;
 				laser_time_count = 0;
 			}
-			
 			else if(laser_bind_count >= 2 && laser_bind_count < 5)
 			{
 				st_pc_cmd.ucCapture = 0X55;
@@ -182,6 +181,7 @@ void laser_loop()
 			{
 				laser_bind_count = 100;	
 			}
+			
 		}	
 	}
 	switch(ucLaser_send_status)          

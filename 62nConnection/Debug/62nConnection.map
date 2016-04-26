@@ -1,39 +1,39 @@
-Optimizing Linkage Editor (V.10.02.00.000)        27-Apr-2016 00:06:36
+Optimizing Linkage Editor (V.10.02.00.000)        27-Apr-2016 07:11:19
 
 *** Options ***
 
--subcommand=E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\62nConnection.hlk
+-subcommand=E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\62nConnection.hlk
 -noprelink
 -rom=D=R,D_1=R_1,D_2=R_2
 -nomessage
--list="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\62nConnection.map"
+-list="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\62nConnection.map"
 -nooptimize
 -start=B_1,R_1,B_2,R_2,B,R,SU,SI/01000,PResetPRG/0FFFF8000,C_1,C_2,C,C$*,D_1,D_2,D,P,PIntPRG,W*,L/0FFFF8100,FIXEDVECT/0FFFFFFD0
 -nologo
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\62nConnection.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\dbsct.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\HIT_cmt0.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\HIT_cmt1.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\HIT_common.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\HIT_hardwaresetup.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\HIT_SPI.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\Interrupt_CMT.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\Interrupt_INTC.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\Interrupt_SCI.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\R_PG_Clock.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\R_PG_I2C_C0.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\R_PG_RSPI_C0.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\R_PG_RSPI_C1.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\R_PG_SCI_C0.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\R_PG_SCI_C5.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\R_PG_SCI_C6.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\R_PG_Timer_CMT_U0.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\resetprg.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\sbrk.obj"
--input="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\Serial.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\62nConnection.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\dbsct.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\HIT_cmt0.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\HIT_cmt1.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\HIT_common.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\HIT_hardwaresetup.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\HIT_SPI.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\Interrupt_CMT.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\Interrupt_INTC.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\Interrupt_SCI.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\R_PG_Clock.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\R_PG_I2C_C0.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\R_PG_RSPI_C0.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\R_PG_RSPI_C1.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\R_PG_SCI_C0.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\R_PG_SCI_C5.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\R_PG_SCI_C6.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\R_PG_Timer_CMT_U0.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\resetprg.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\sbrk.obj"
+-input="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\Serial.obj"
 -library="C:\Renesas\PDG2\lib\RX62N\RX62N_library_LQFP_100.lib"
--library="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\62nConnection.lib"
--output="E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62nConnection\Debug\62nConnection.abs"
+-library="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\62nConnection.lib"
+-output="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\62nConnection.abs"
 -end
 
 *** Error information ***

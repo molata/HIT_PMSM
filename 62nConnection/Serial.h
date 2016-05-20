@@ -79,6 +79,10 @@ void serial_receive_loop();
 void laser_receive_loop();
 /********************* laser 解析 ********************************/       // 后期需要删除
 void laser_send_loop();
+
+/********************* 串口错误清除 ******************************/
+void SCI0CheckError(void);
+void SCI6CheckError(void);
 /*************************************************
 Function: // serial_u32toucArr
 Description: // 将四个字节的数转换成四个字节的数组

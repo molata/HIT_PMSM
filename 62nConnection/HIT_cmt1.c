@@ -5,7 +5,7 @@ extern uchar ucSPI_sendTA;
 extern uchar ucSPI_sendTB;  
 void Cmt1IntFunc()   // 50us
 {
-	//serial_loop();
+	serial_loop();
 	laser_loop();
 /***** SPI接收和发送 ********/
 

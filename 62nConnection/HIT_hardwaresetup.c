@@ -16,8 +16,14 @@ void HIT_hardwaresetup()
 void SCI_setup()    //初始化SCI
 {
 	R_PG_SCI_Set_C0();
+	SCI0.SCR.BYTE = SCI0.SCR.BYTE & 0XCF;
+	SCI0.SCR.BYTE = SCI0.SCR.BYTE | 0X30;
+	
 	R_PG_SCI_Set_C5();
+	
 	R_PG_SCI_Set_C6();   
+	SCI6.SCR.BYTE = SCI6.SCR.BYTE & 0XCF;
+	SCI6.SCR.BYTE = SCI6.SCR.BYTE | 0X30;
 }
 void Clock_setup()   //初始化时钟
 {

@@ -27,47 +27,22 @@ void Spi1IntFunc()
 		RSPI1.SPSR.BIT.MODF = 0X00;
 	}	
 }
-void Cmt0IntFunc()   // 5us
+void Cmt0IntFunc()   // 10us
 {
-	//serial_receive_loop();
+	serial_receive_loop();
 	laser_receive_loop();
-	ucLaser_send_time++;
-	if(ucLaser_send_time >= 10)
-	{
-		ucLaser_send_time = 0;
-		laser_send_loop();
-	}
 	
 	/********************** 62TA发送指令 **************************/
-
-	//if(uc62TA_IO != PORT5.DR.BIT.B4)
-	uc62TA_IO_Value = PORT5.PORT.BIT.B4;
-	if(ucSPI_sendTA_startCount == 1)
-	{
-		ucSPI_sendTA_count++;
-		if(ucSPI_sendTA_count >= 6)  //接收中断后20us,发数
-		{
-			ucSPI_sendTA = 1;	
-			ucSPI_sendTA_count = 0;
-			ucSPI_sendTA_startCount = 0;
-		}	
-	}
+	uc62TA_IO_Value = PORT5.PORT.BIT.B4;              // 检测外部触发
 	if(uc62TA_IO_Value != uc62TA_IO_history)
 	{
+		ucSPI_sendTA = 1;
 		uc62TA_IO_history = uc62TA_IO_Value;
-		uc62TA_fresh = 1;
 	}
-	else 
-	{
-		uc62TA_fresh = 0;	
-	}
-	if(uc62TA_fresh == 1 && uc62TA_IO_Value == 1)
-	{
-		ucSPI_sendTA_startCount = 1;	
-	}
+
 
 	/********************** 62TB发送指令 **************************/
-
+/***
 	uc62TB_IO_Value = PORTA.PORT.BIT.B0;
 	if(ucSPI_sendTB_startCount == 1)
 	{
@@ -92,5 +67,5 @@ void Cmt0IntFunc()   // 5us
 	{
 		ucSPI_sendTB_startCount = 1;	
 	}
-
+***/
 }

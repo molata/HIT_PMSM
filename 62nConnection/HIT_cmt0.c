@@ -34,12 +34,15 @@ void Cmt0IntFunc()   // 10us
 	
 	/********************** 62TA发送指令 **************************/
 	uc62TA_IO_Value = PORT5.PORT.BIT.B4;              // 检测外部触发
-	if(uc62TA_IO_Value != uc62TA_IO_history)
+	if(uc62TA_IO_Value != uc62TA_IO_history && uc62TA_IO_Value == 0x01)
 	{
 		ucSPI_sendTA = 1;
-		uc62TA_IO_history = uc62TA_IO_Value;
+		
 	}
-
+	if(uc62TA_IO_Value != uc62TA_IO_history)
+	{
+		uc62TA_IO_history = uc62TA_IO_Value;	
+	}
 
 	/********************** 62TB发送指令 **************************/
 /***

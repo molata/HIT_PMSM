@@ -3,12 +3,12 @@
 [DATABASE_VERSION]
 "11.0" 
 [WORKSPACE_DETAILS]
-"62nConnection" "E:\实验室资料\实验室项目\207项目\主控板调试\62N" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection.hws" "RX" "Renesas RX Standard" 
+"62nConnection" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection.hws" "RX" "Renesas RX Standard" 
 [SHARED_WORKSPACE_CONTROL_STATUS]
 "" "" "" 
 "" "" "" 
 [PROJECTS]
-"62nConnection" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\62nConnection.hwp" 0 
+"62nConnection" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\62nConnection.hwp" 0 
 [INFORMATION]
 "No workspace information available" 
 [SCRAP]
@@ -22,7 +22,7 @@
 [MAKEFILE_BUILD_INFO]
 "$(WORKSPDIR)\make\$(PROJECTNAME)_$(CONFIGNAME).mak" "" "$(WORKSPDIR)\make" 0 0 0 
 [VD_CONFIGURATION_OPTIONS]
-"ACTIVE_DESKTOP" "0" 
+"ACTIVE_DESKTOP" "1" 
 [VD_CONFIGURATIONS]
 "0" "Default1" "1" 
 "1" "Default2" "1" 

@@ -7,6 +7,8 @@ void Cmt1IntFunc()   // 50us
 {
 	serial_loop();
 	laser_loop();
+	SCI0CheckError();             // SCI0清除错误
+	SCI6CheckError();             // SCI0清除错误
 /***** SPI接收和发送 ********/
 
 	if(ucSPI_sendTA == 1)

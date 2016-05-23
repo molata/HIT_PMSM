@@ -64,32 +64,30 @@ void SPI_62TB_loop()
 {
 	if(ucSPI_62TB_cmd == SPI_CHECK_62T)  // 向62T发送查询指令
 	{
-			//us62TB_send_data = usTemp_PCB_cmd;   // 仅仅用来测试
-			us62TB_send_data = 0xFFFF;
-			//PORTE.DR.BIT.B3 = !PORTE.DR.BIT.B3;
-			R_PG_RSPI_TransferAllData_C1(&us62TB_send_data, &us62TB_rec_history, 1);    // 发送上位机指令
-			if((us62TB_rec_history >> 14) == (0x000F >> 2))
-			{
-				us62TB_rec_data = us62TB_rec_history - (0x000F << 14);   // 将数据接收走
-				stSerial_data.elevation_deg = ((float)us62TB_rec_data - 1800) / 100;
-			}
-			else if((us62TB_rec_history >> 14) == 0X0000)
-			{
-				us62TB_rec_data = us62TB_rec_history;
-				stSerial_data.elevation_view_deg_speed = ((float)us62TA_rec_data - 6000) / 1000;
-			}
-			us62TB_rec_history = us62TB_rec_data;
+		us62TB_send_data = 0xFFFF;
+		R_PG_RSPI_TransferAllData_C1(&us62TB_send_data, &us62TB_rec_history, 1);    // 发送上位机指令
+		if((us62TB_rec_history >> 14) == (0x000F >> 2))
+		{
+			us62TB_rec_data = us62TB_rec_history - (0x000F << 14);   // 将数据接收走
+			stSerial_data.elevation_deg = ((float)us62TB_rec_data - 1800) / 100;
+		}
+		else if((us62TA_rec_history >> 14) == 0X0000)
+		{
+			us62TB_rec_data = us62TB_rec_history;
+			stSerial_data.elevation_view_deg_speed = ((float)us62TA_rec_data - 6000) / 1000;
+		}
+			
+		us62TB_rec_history = us62TB_rec_data;
+			//stSerial_data.elevation_deg = ((float)(us62TA_rec_data) - 1800)/ 100;     // 更新角度值
+		//}
 	}
 	else if (ucSPI_62TB_cmd == SPI_SEND_CMD)
 	{
+		
 		us62TB_send_data = (short)(st_pc_cmd.fpSailDeg * 100 + 1800);   // 按照协议的方式发送
 		R_PG_RSPI_TransferAllData_C1(&us62TB_send_data, &us62TB_rec_data, 1);    // 发送上位机指令
-		usTemp_PCB_cmd++;
-		if(usTemp_PCB_cmd >= 5)
-		{
-			ucSPI_62TB_cmd = SPI_CHECK_62T;
-			usTemp_PCB_cmd = 0;	
-		}
+		
+		ucSPI_62TB_cmd = SPI_CHECK_62T;
 	}
 
 

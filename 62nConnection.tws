@@ -7,27 +7,37 @@
 [GENERAL_DATA]
 [BREAKPOINTS]
 [OPEN_WORKSPACE_FILES]
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\62nConnection.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_cmt0.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_cmt1.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_common.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_hardwaresetup.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_Interruption.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_SPI.c" 
 "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\resetprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\62nConnection.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_cmt0.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_cmt1.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_SPI.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\resetprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src\Interrupt_CMT.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src\Interrupt_SCI.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\RSPI\R_PG_RSPI_C0.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\RSPI\R_PG_RSPI_C1.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Serial.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Serial.h" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\typedefine.h" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_CMT.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SCI.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C0.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C1.c" 
 [WORKSPACE_FILE_STATES]
-"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\resetprg.c" 25 25 1320 353 0 1 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\RSPI\R_PG_RSPI_C0.c" 0 0 1320 353 0 7 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\RSPI\R_PG_RSPI_C1.c" 150 150 1320 353 0 6 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src\Interrupt_CMT.c" 0 0 1486 560 0 9 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src\Interrupt_SCI.c" 0 0 1316 349 0 0 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\62nConnection.c" -8 -30 1486 560 1 8 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_SPI.c" 125 125 1320 353 0 5 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_cmt0.c" 75 75 1320 353 0 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_cmt1.c" 50 50 1320 353 0 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\resetprg.c" 100 100 1320 353 0 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C0.c" 125 125 1353 464 0 14 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C1.c" 150 150 1353 464 0 15 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_CMT.c" 150 150 1320 353 0 6 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SCI.c" 0 0 1486 560 0 8 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\62nConnection.c" -8 -30 1569 585 1 7 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_Interruption.c" 75 75 1320 353 0 10 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_SPI.c" 25 25 1320 353 0 1 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_cmt0.c" 75 75 1320 353 0 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_cmt1.c" 50 50 1320 353 0 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_common.c" 25 25 1428 266 0 13 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_hardwaresetup.c" 125 125 1320 353 0 12 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Serial.c" 125 125 1320 353 0 5 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Serial.h" 50 50 1320 353 0 9 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\resetprg.c" 0 0 1569 448 0 4 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\typedefine.h" 100 100 1320 353 0 11 
 [LOADED_PROJECTS]
 "62nConnection" 
 [END]

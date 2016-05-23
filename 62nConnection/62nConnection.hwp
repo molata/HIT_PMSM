@@ -3,14 +3,14 @@
 [DATABASE_VERSION]
 "2.8" 
 [PROJECT_DETAILS]
-"62nConnection" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\62nConnection.hwp" "RX" "Renesas RX Standard" "Application" "RX600" "RX62N" 
+"62nConnection" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\62nConnection.hwp" "RX" "Renesas RX Standard" "Application" "RX600" "RX62N" 
 [INFORMATION]
 "No project information available" 
 [TOOL_CHAIN]
 "Renesas RX Standard Toolchain" "1.2.0.0" 
 [CONFIGURATIONS]
-"Debug" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\Debug" 
-"Release" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\Release" 
+"Debug" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug" 
+"Release" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Release" 
 [BUILD_PHASES]
 "Renesas OptLinker" 1 
 "Renesas RX Assembler" 1 
@@ -116,36 +116,37 @@
 "Object file" "Renesas OptLinker" "Renesas RX Assembler" 
 "Object file" "Renesas OptLinker" "Renesas RX C/C++ Compiler" 
 [PROJECT_FILES]
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\RIIC\R_PG_I2C_C0.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\RSPI\R_PG_RSPI_C0.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\RSPI\R_PG_RSPI_C1.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\SCI\R_PG_SCI_C0.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\SCI\R_PG_SCI_C5.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\SCI\R_PG_SCI_C6.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\SYSTEM\R_PG_Clock.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src\Interrupt_CMT.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src\Interrupt_INTC.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src\Interrupt_SCI.c" "User" "AddFromPDG" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\62nConnection.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_SPI.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_SPI.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_cmt0.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_cmt0intfunc.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_cmt1.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_common.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_common.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_hardwaresetup.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_hardwaresetup.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\Serial.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\Serial.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\dbsct.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\intprg.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\iodefine.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\resetprg.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\sbrk.c" "User" "C source file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\typedefine.h" "User" "C header file" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\vecttbl.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RIIC\R_PG_I2C_C0.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C0.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C1.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C0.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C5.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C6.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SYSTEM\R_PG_Clock.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_CMT.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_INTC.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SCI.c" "User" "AddFromPDG" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\62nConnection.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_Interruption.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_SPI.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_SPI.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_cmt0.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_cmt0intfunc.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_cmt1.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_common.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_common.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_hardwaresetup.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_hardwaresetup.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Serial.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Serial.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\dbsct.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\intprg.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\iodefine.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\resetprg.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\sbrk.c" "User" "C source file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\typedefine.h" "User" "C header file" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\vecttbl.c" "User" "C source file" 2 
 [FOLDER]
 "AddFromPDG" "AddFromPDG" 
 "C header file" "C header file" 
@@ -155,98 +156,103 @@
 [ON_DEMAND_COMPONENTS_LOADED]
 [SYNC_SESSION_NAMES]
 [SESSIONS]
-"DefaultSession" "E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\DefaultSession.hsf" 0 
+"DefaultSession" "E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\DefaultSession.hsf" 0 
 [GENERAL_DATA_SESSION_DefaultSession]
 [OPTIONS_Debug_Renesas OptLinker]
-"Single Shot" "09f28d79164b1d10" 6 
+"Single Shot" "04ffe3875e4b1d10" 7 
 [OPTIONS_Debug_Renesas RX Assembler]
-"Assembly source file" "0b07b770610a1d10" 5 
-"Linkage symbol file" "0b07b770610a1d10" 5 
+"Assembly source file" "0b07b770610a1d10" 6 
+"Linkage symbol file" "0b07b770610a1d10" 6 
 [OPTIONS_Debug_Renesas RX C/C++ Compiler]
 "C source file" "0b07b770610a1d10" 4 
 "C++ source file" "0b07b770610a1d10" 4 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "0e3757a9a54b1d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\RIIC\R_PG_I2C_C0.c" "0ddb77a9a54b1d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\RSPI\R_PG_RSPI_C0.c" "0a9b97a9a54b1d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\RSPI\R_PG_RSPI_C1.c" "0930c7a9a54b1d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\SCI\R_PG_SCI_C0.c" "08d4e7a9a54b1d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\SCI\R_PG_SCI_C5.c" "08eb08a9a54b1d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\SCI\R_PG_SCI_C6.c" "061e28a9a54b1d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\SYSTEM\R_PG_Clock.c" "05b258a9a54b1d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src\Interrupt_CMT.c" "0f1b68a9a54b1d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src\Interrupt_INTC.c" "0f2298a9a54b1d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src\Interrupt_SCI.c" "0f39b8a9a54b1d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\62nConnection.c" "0a14d8a9a54b1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_SPI.c" "07d3f8a9a54b1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_cmt0.c" "09cf19a9a54b1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_cmt1.c" "068f39a9a54b1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_common.c" "069669a9a54b1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_hardwaresetup.c" "04c889a9a54b1d10" 3 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\Serial.c" "0f93a9a9a54b1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\dbsct.c" "0c53c9a9a54b1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\intprg.c" "06cbd9a9a54b1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\resetprg.c" "038bf9a9a54b1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\sbrk.c" "004b1aa9a54b1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\vecttbl.c" "0e6d3aa9a54b1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "0e3757a9a54b1d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RIIC\R_PG_I2C_C0.c" "0ddb77a9a54b1d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C0.c" "0a9b97a9a54b1d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C1.c" "0930c7a9a54b1d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C0.c" "08d4e7a9a54b1d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C5.c" "08eb08a9a54b1d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C6.c" "061e28a9a54b1d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SYSTEM\R_PG_Clock.c" "05b258a9a54b1d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_CMT.c" "0f1b68a9a54b1d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_INTC.c" "0f2298a9a54b1d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SCI.c" "0f39b8a9a54b1d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\62nConnection.c" "0a14d8a9a54b1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_Interruption.c" "0eb2f4875e4b1d10" 5 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_SPI.c" "07d3f8a9a54b1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_cmt0.c" "09cf19a9a54b1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_cmt1.c" "068f39a9a54b1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_common.c" "069669a9a54b1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_hardwaresetup.c" "04c889a9a54b1d10" 3 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Serial.c" "0f93a9a9a54b1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\dbsct.c" "0c53c9a9a54b1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\intprg.c" "06cbd9a9a54b1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\resetprg.c" "038bf9a9a54b1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\sbrk.c" "004b1aa9a54b1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\vecttbl.c" "0e6d3aa9a54b1d10" 2 
 [OPTIONS_Debug_Renesas RX C/C++ Library Generator]
 "Single Shot" "0b07b770610a1d10" 1 
 [OPTIONS_Debug_Renesas RX Configurator]
-"Single Shot" "07a53da4350a1d10" 7 
+"Single Shot" "05fe45c2764b1d10" 8 
 [OPTIONS_Debug]
 "" 0 
 "[S|OUTPUTPATH|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] [V|VERSION|1] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|LANG|C] [B|RUNTIME|1] [B|CTYPE|0] [B|MATH|0] [B|MATHF|0] [B|STDARG|0] [B|STDIO|1] [B|STDLIB|1] [B|STRING|1] [B|IOS|0] [B|NEW|1] [B|COMPLEX|0] [B|CPPSTRING|0] [S|MODE|BUILD/CHANGED]" 1 
-"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON4] [S|OUTPUTPATH|^"$(CONFIGDIR)^"] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 7 
-"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 5 
+"[V|VERSION|1] [B|COMMAND|1] [S|SPEC|UITRON4] [S|OUTPUTPATH|^"$(CONFIGDIR)^"] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 8 
+"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|FINT_REGISTER|0]" 6 
 "[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24]" 4 
 "[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|INCLUDE|^"E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62NBuffer\62nConnection\62NPDG\i_src^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src^"]" 2 
+"[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|INCLUDE|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src^"]" 5 
 "[V|VERSION|1] [B|DEBUG|1] [S|OUTPUTPATH|^"$(CONFIGDIR)\$(FILELEAF).obj^"] [B|LISTFILE|0] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|INCLUDE|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG^"|^"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src^"]" 3 
-"[V|VERSION|6] [B|DEBUG|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).abs^"] [B|LIST|1] [S|LIST|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [B|OPTIMIZE|0] [S|ROM|(D,R)|(D_1,R_1)|(D_2,R_2)] [S|ENDIAN|LITTLE] [S|FORM|STYPE] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] [S|START|B_1,R_1,B_2,R_2,B,R,SU,SI(1000)|PResetPRG(FFFF8000)|C_1,C_2,C,C$*,D_1,D_2,D,P,PIntPRG,W*,L(FFFF8100)|FIXEDVECT(FFFFFFD0)] [S|INPUTLIBRARY|^"C:\Renesas\PDG2\lib\RX62N\RX62N_library_LQFP_100.lib^"]" 6 
+"[V|VERSION|6] [B|DEBUG|1] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).abs^"] [B|LIST|1] [S|LIST|^"$(CONFIGDIR)\$(PROJECTNAME).map^"] [B|OPTIMIZE|0] [S|ROM|(D,R)|(D_1,R_1)|(D_2,R_2)] [S|ENDIAN|LITTLE] [S|FORM|STYPE] [S|OUTPUT|^"$(CONFIGDIR)\$(PROJECTNAME).mot^"] [S|START|B_1,R_1,B_2,R_2,B,R,SU,SI(1000)|PResetPRG(FFFF8000)|C_1,C_2,C,C$*,D_1,D_2,D,P,PIntPRG,W*,L(FFFF8100)|FIXEDVECT(FFFFFFD0)] [S|INPUTLIBRARY|^"C:\Renesas\PDG2\lib\RX62N\RX62N_library_LQFP_100.lib^"]" 7 
 [EXCLUDED_FILES_Debug]
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\intprg.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\vecttbl.c" 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\intprg.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\vecttbl.c" 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\vecttbl.c" 
 [LINKAGE_ORDER_Debug]
 [GENERAL_DATA_CONFIGURATION_Debug]
 [OPTIONS_Release_Renesas OptLinker]
-"Single Shot" "04655da4350a1d10" 4 
+"Single Shot" "085d75c2764b1d10" 4 
 [OPTIONS_Release_Renesas RX Assembler]
 "Assembly source file" "0b07b770610a1d10" 3 
 "Linkage symbol file" "0b07b770610a1d10" 3 
 [OPTIONS_Release_Renesas RX C/C++ Compiler]
 "C source file" "0b07b770610a1d10" 2 
 "C++ source file" "0b07b770610a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "014d1f94350a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\RIIC\R_PG_I2C_C0.c" "0e7755a4350a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\RSPI\R_PG_RSPI_C0.c" "035ae6a4350a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\RSPI\R_PG_RSPI_C1.c" "0a0288a4350a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\SCI\R_PG_SCI_C0.c" "043ba0a4350a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\SCI\R_PG_SCI_C5.c" "072932a4350a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\SCI\R_PG_SCI_C6.c" "0a17c3a4350a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\SYSTEM\R_PG_Clock.c" "0fb19d94350a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src\Interrupt_CMT.c" "00571aa4350a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src\Interrupt_INTC.c" "00fd9ba4350a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src\Interrupt_SCI.c" "07a53da4350a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\62nConnection.c" "0b07b770610a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_SPI.c" "04ec58b4610a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_cmt0.c" "0129c685610a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_cmt1.c" "0dda2145610a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_common.c" "09451815610a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\HIT_hardwaresetup.c" "018f3d83810a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\Serial.c" "05b1a754610a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\dbsct.c" "0b07b770610a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\intprg.c" "0b07b770610a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\resetprg.c" "0b07b770610a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\sbrk.c" "0b07b770610a1d10" 2 
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\vecttbl.c" "0b07b770610a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\CMT\R_PG_Timer_CMT_U0.c" "014d1f94350a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RIIC\R_PG_I2C_C0.c" "0e7755a4350a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C0.c" "035ae6a4350a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\RSPI\R_PG_RSPI_C1.c" "0a0288a4350a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C0.c" "043ba0a4350a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C5.c" "072932a4350a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SCI\R_PG_SCI_C6.c" "0a17c3a4350a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\SYSTEM\R_PG_Clock.c" "0fb19d94350a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_CMT.c" "00571aa4350a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_INTC.c" "00fd9ba4350a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src\Interrupt_SCI.c" "07a53da4350a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\62nConnection.c" "0b07b770610a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_Interruption.c" "05fe45c2764b1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_SPI.c" "04ec58b4610a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_cmt0.c" "0129c685610a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_cmt1.c" "0dda2145610a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_common.c" "09451815610a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\HIT_hardwaresetup.c" "018f3d83810a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Serial.c" "05b1a754610a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\dbsct.c" "0b07b770610a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\intprg.c" "0b07b770610a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\resetprg.c" "0b07b770610a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\sbrk.c" "0b07b770610a1d10" 2 
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\vecttbl.c" "0b07b770610a1d10" 2 
 [OPTIONS_Release_Renesas RX C/C++ Library Generator]
 "Single Shot" "0b07b770610a1d10" 1 
 [OPTIONS_Release_Renesas RX Configurator]
-"Single Shot" "07a53da4350a1d10" 5 
+"Single Shot" "05fe45c2764b1d10" 5 
 [OPTIONS_Release]
 "" 0 
 "[S|OUTPUTPATH|^"$(CONFIGDIR)\$(PROJECTNAME).lib^"] [V|VERSION|1] [S|CPU|RX600] [S|ENDIAN|LITTLE] [S|ROUND|NEAREST] [S|DBL_SIZE|4] [B|SIGNED_CHAR|0] [B|SIGNED_BITFIELD|0] [S|BIT_ORDER|RIGHT] [S|FINT_REGISTER|0] [S|BRANCH|24] [S|LANG|C] [B|RUNTIME|1] [B|CTYPE|0] [B|MATH|0] [B|MATHF|0] [B|STDARG|0] [B|STDIO|1] [B|STDLIB|1] [B|STRING|1] [B|IOS|0] [B|NEW|1] [B|COMPLEX|0] [B|CPPSTRING|0] [S|MODE|BUILD/CHANGED]" 1 

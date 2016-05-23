@@ -29,8 +29,6 @@ void Spi1IntFunc()
 }
 void Cmt0IntFunc()   // 10us
 {
-	serial_receive_loop();
-	laser_receive_loop();
 	
 	/********************** 62TA发送指令 **************************/
 	uc62TA_IO_Value = PORT5.PORT.BIT.B4;              // 检测外部触发
@@ -45,30 +43,15 @@ void Cmt0IntFunc()   // 10us
 	}
 
 	/********************** 62TB发送指令 **************************/
-/***
 	uc62TB_IO_Value = PORTA.PORT.BIT.B0;
-	if(ucSPI_sendTB_startCount == 1)
+	if(uc62TB_IO_Value != uc62TB_IO_history && uc62TB_IO_Value == 0x01)
 	{
-		ucSPI_sendTB_count++;
-		if(ucSPI_sendTB_count >= 10)  //接收中断后20us,发数
-		{
-			ucSPI_sendTB = 1;	
-			ucSPI_sendTB_count = 0;
-			ucSPI_sendTB_startCount = 0;
-		}	
+		ucSPI_sendTB = 1;
+		
 	}
 	if(uc62TB_IO_Value != uc62TB_IO_history)
 	{
-		uc62TB_IO_history = uc62TB_IO_Value;
-		uc62TB_fresh = 1;
+		uc62TB_IO_history = uc62TB_IO_Value;	
 	}
-	else 
-	{
-		uc62TB_fresh = 0;	
-	}
-	if(uc62TB_fresh == 1 && uc62TB_IO_Value == 1)
-	{
-		ucSPI_sendTB_startCount = 1;	
-	}
-***/
+
 }

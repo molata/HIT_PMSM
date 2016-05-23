@@ -189,94 +189,6 @@ void Interrupt_SCI6_ERI6(void)
 *				: CS-4 release.
 *""FUNC COMMENT END""**********************************************/
 
-#if FAST_INTC_VECTOR == VECT_SCI0_RXI0
-#pragma interrupt Interrupt_SCI0_RXI0(vect=VECT_SCI0_RXI0, fint)
-#else
-#pragma interrupt Interrupt_SCI0_RXI0(vect=VECT_SCI0_RXI0)
-#endif
-void Interrupt_SCI0_RXI0(void)
-{
-	/* Ok to process the data? */
-	if (rpdl_SCI_rx_using_irq[0] == true)
-	{
-		/* check if ID reception in Multiprocessor mode */
-		if (rpdl_SCI_MP_mode[0] == 2)
-		{
-			/* check if ID cycle ? */
-			if (SCI0.SSR.BIT.MPB == 1)
-			{
-				uint8_t id;
-				
-				/* Read the ID */
-				id = SCI0.RDR;
-
-				/* ID matching ? */
-				if (id != rpdl_SCI_MP_rx_stationID[0])
-				{
-					/* ID does not match */
-					/* MPIE = 1 */
-					SCI0.SCR.BIT.MPIE = 1;
-				}
-				else
-				{
-					/* ID matches */
-					/* Disable interrupt request generation, and try to disable reception */
-					SCI0.SCR.BYTE &= (uint8_t)(INV_BIT_6 & INV_BIT_4);
-
-					/* Notify the user */
-					if (rpdl_SCI_RX_End_callback_func[0] != PDL_NO_FUNC)
-					{
-						rpdl_SCI_RX_End_callback_func[0]();
-					}					
-				}	
-				
-				/* Exit ISR */
-				return;	
-			}
-		}
-		
-		/* Read and store the character */
-		*rpdl_SCI_rx_string_pointer[0] = SCI0.RDR;
-
-		/* Increment the character counter */
-		rpdl_SCI_rx_counter[0]++;
-
-		/* More characters expected? */
-		if (rpdl_SCI_rx_counter[0] < rpdl_SCI_rx_threshold[0])
-		{
-			/* Move to the next location in the buffer */
-			rpdl_SCI_rx_string_pointer[0]++;
-		}
-		else
-		{
-			/* Disable interrupt request generation, and try to disable reception */
-			SCI0.SCR.BYTE &= (uint8_t)(INV_BIT_6 & INV_BIT_4);
-
-			/* Async MP mode ? */
-			if (((SCI0.SMR.BIT.MP) != 0) && ((rpdl_SCI_MP_mode[0]) != 0))
-			{
-				/* Set MPIE = 1 (multiprocessor mode reception) */
-				SCI0.SCR.BIT.MPIE = 1;		
-			}
-
-			/* Notify the user */
-			if (rpdl_SCI_RX_End_callback_func[0] != PDL_NO_FUNC)
-			{
-				rpdl_SCI_RX_End_callback_func[0]();
-			}
-		}
-	}
-	/* Either the DMAC or DTC has passed on the interrupt */ 
-	else
-	{
-		/* Call the callback function */
-		if (rpdl_SCI_RX_End_callback_func[0] != PDL_NO_FUNC)
-		{
-			rpdl_SCI_RX_End_callback_func[0]();
-		}
-	}
-}
-
 #if FAST_INTC_VECTOR == VECT_SCI1_RXI1
 #pragma interrupt Interrupt_SCI1_RXI1(vect=VECT_SCI1_RXI1, fint)
 #else
@@ -631,93 +543,6 @@ void Interrupt_SCI5_RXI5(void)
 	}
 }
 
-#if FAST_INTC_VECTOR == VECT_SCI6_RXI6
-#pragma interrupt Interrupt_SCI6_RXI6(vect=VECT_SCI6_RXI6, fint)
-#else
-#pragma interrupt Interrupt_SCI6_RXI6(vect=VECT_SCI6_RXI6)
-#endif
-void Interrupt_SCI6_RXI6(void)
-{
-	/* Ok to process the data? */
-	if (rpdl_SCI_rx_using_irq[6] == true)
-	{
-		/* check if ID reception in Multiprocessor mode */
-		if (rpdl_SCI_MP_mode[6] == 2)
-		{
-			/* check if ID cycle ? */
-			if (SCI6.SSR.BIT.MPB == 1)
-			{
-				uint8_t id;
-				
-				/* Read the ID */
-				id = SCI6.RDR;
-
-				/* ID matching ? */
-				if (id != rpdl_SCI_MP_rx_stationID[6])
-				{
-					/* ID does not match */
-					/* MPIE = 1 */
-					SCI6.SCR.BIT.MPIE = 1;
-				}
-				else
-				{
-					/* ID matches */
-					/* Disable interrupt request generation, and try to disable reception */
-					SCI6.SCR.BYTE &= (uint8_t)(INV_BIT_6 & INV_BIT_4);
-
-					/* Notify the user */
-					if (rpdl_SCI_RX_End_callback_func[6] != PDL_NO_FUNC)
-					{
-						rpdl_SCI_RX_End_callback_func[6]();
-					}					
-				}	
-				
-				/* Exit ISR */
-				return;	
-			}
-		}
-				
-		/* Read and store the character */
-		*rpdl_SCI_rx_string_pointer[6] = SCI6.RDR;
-
-		/* Increment the character counter */
-		rpdl_SCI_rx_counter[6]++;
-
-		/* More characters expected? */
-		if (rpdl_SCI_rx_counter[6] < rpdl_SCI_rx_threshold[6])
-		{
-			/* Move to the next location in the buffer */
-			rpdl_SCI_rx_string_pointer[6]++;
-		}
-		else
-		{
-			/* Disable interrupt request generation, and try to disable reception */
-			SCI6.SCR.BYTE &= (uint8_t)(INV_BIT_6 & INV_BIT_4);
-
-			/* Async MP mode ? */
-			if (((SCI6.SMR.BIT.MP) != 0) && ((rpdl_SCI_MP_mode[6]) != 0))
-			{
-				/* Set MPIE = 1 (multiprocessor mode reception) */
-				SCI6.SCR.BIT.MPIE = 1;		
-			}
-
-			/* Notify the user */
-			if (rpdl_SCI_RX_End_callback_func[6] != PDL_NO_FUNC)
-			{
-				rpdl_SCI_RX_End_callback_func[6]();
-			}
-		}
-	}
-	/* Either the DMAC or DTC has passed on the interrupt */ 
-	else
-	{
-		/* Call the callback function */
-		if (rpdl_SCI_RX_End_callback_func[6] != PDL_NO_FUNC)
-		{
-			rpdl_SCI_RX_End_callback_func[6]();
-		}
-	}
-}
 
 /*""FUNC COMMENT""***************************************************
 * Module outline: SCIn transmit data interrupt processing
@@ -741,63 +566,6 @@ void Interrupt_SCI6_RXI6(void)
 *				: CS-4 release.
 *""FUNC COMMENT END""**********************************************/
 
-#if FAST_INTC_VECTOR == VECT_SCI0_TXI0
-#pragma interrupt Interrupt_SCI0_TXI0(vect=VECT_SCI0_TXI0, fint)
-#else
-#pragma interrupt Interrupt_SCI0_TXI0(vect=VECT_SCI0_TXI0)
-#endif
-void Interrupt_SCI0_TXI0(void)
-{
-	/* Ok to process the string? */
-	if (rpdl_SCI_tx_using_irq[0] == true)
-	{
-		/* Another character to be sent? */
-		if (
-		/* Sending a string and next character is not a Null? */
-		((rpdl_SCI_tx_threshold[0] == 0) && (*rpdl_SCI_tx_string_pointer[0] != NULL))
-		||
-		/* Not reached the byte total? */
-		(rpdl_SCI_tx_counter[0] < rpdl_SCI_tx_threshold[0])
-		)
-		{
-			/* Send the character */
-			SCI0.TDR = *rpdl_SCI_tx_string_pointer[0];
-
-			/* Increment the pointer */
-			rpdl_SCI_tx_string_pointer[0]++;
-
-			/* Increment the counter */
-			rpdl_SCI_tx_counter[0]++;
-		}
-		else
-		{
-			/* Disable interrupt request generation */
-			SCI0.SCR.BIT.TIE = 0;
-
-			/* Smart card mode? */
-			if (SCI0.SCMR.BIT.SMIF == 1)
-			{
-				/* Disable transmission and interrupt request generation */
-				SCI0.SCR.BYTE &= (uint8_t)(INV_BIT_7 & INV_BIT_5);
-
-				/* Call the callback function */
-				if (rpdl_SCI_TX_End_callback_func[0] != PDL_NO_FUNC)
-				{
-					rpdl_SCI_TX_End_callback_func[0]();
-				}
-			}
-		}
-	}
-	/* Either the DMAC or DTC has passed on the interrupt */ 
-	else
-	{
-		/* Call the callback function */
-		if (rpdl_SCI_TX_End_callback_func[0] != PDL_NO_FUNC)
-		{
-			rpdl_SCI_TX_End_callback_func[0]();
-		}
-	}
-}
 
 #if FAST_INTC_VECTOR == VECT_SCI1_TXI1
 #pragma interrupt Interrupt_SCI1_TXI1(vect=VECT_SCI1_TXI1, fint)
@@ -1032,64 +800,6 @@ void Interrupt_SCI5_TXI5(void)
 	}
 }
 
-#if FAST_INTC_VECTOR == VECT_SCI6_TXI6
-#pragma interrupt Interrupt_SCI6_TXI6(vect=VECT_SCI6_TXI6, fint)
-#else
-#pragma interrupt Interrupt_SCI6_TXI6(vect=VECT_SCI6_TXI6)
-#endif
-void Interrupt_SCI6_TXI6(void)
-{
-	/* Ok to process the string? */
-	if (rpdl_SCI_tx_using_irq[6] == true)
-	{
-		/* Another character to be sent? */
-		if (
-		/* Sending a string and next character is not a Null? */
-		((rpdl_SCI_tx_threshold[6] == 0) && (*rpdl_SCI_tx_string_pointer[6] != NULL))
-		||
-		/* Not reached the byte total? */
-		(rpdl_SCI_tx_counter[6] < rpdl_SCI_tx_threshold[6])
-		)
-		{
-			/* Send the character */
-			SCI6.TDR = *rpdl_SCI_tx_string_pointer[6];
-
-			/* Increment the pointer */
-			rpdl_SCI_tx_string_pointer[6]++;
-
-			/* Increment the counter */
-			rpdl_SCI_tx_counter[6]++;
-		}
-		else
-		{
-			/* Disable interrupt request generation */
-			SCI6.SCR.BIT.TIE = 0;
-
-			/* Smart card mode? */
-			if (SCI6.SCMR.BIT.SMIF == 1)
-			{
-				/* Disable transmission and interrupt request generation */
-				SCI6.SCR.BYTE &= (uint8_t)(INV_BIT_7 & INV_BIT_5);
-
-				/* Call the callback function */
-				if (rpdl_SCI_TX_End_callback_func[6] != PDL_NO_FUNC)
-				{
-					rpdl_SCI_TX_End_callback_func[6]();
-				}
-			}
-		}
-	}
-	/* Either the DMAC or DTC has passed on the interrupt */ 
-	else
-	{
-		/* Call the callback function */
-		if (rpdl_SCI_TX_End_callback_func[6] != PDL_NO_FUNC)
-		{
-			rpdl_SCI_TX_End_callback_func[6]();
-		}
-	}
-}
-
 /*""FUNC COMMENT""***************************************************
 * Module outline: SCIn transmit end interrupt processing
 *-------------------------------------------------------------------
@@ -1111,23 +821,6 @@ void Interrupt_SCI6_TXI6(void)
 *				: Ver 1.01
 *				: CS-4 release.
 *""FUNC COMMENT END""**********************************************/
-
-#if FAST_INTC_VECTOR == VECT_SCI0_TEI0
-#pragma interrupt Interrupt_SCI0_TEI0(vect=VECT_SCI0_TEI0, fint)
-#else
-#pragma interrupt Interrupt_SCI0_TEI0(vect=VECT_SCI0_TEI0)
-#endif
-void Interrupt_SCI0_TEI0(void)
-{
-	/* Disable interrupt request generation, and try to disable transmission */
-	SCI0.SCR.BYTE &= (uint8_t)(INV_BIT_7 & INV_BIT_5 & INV_BIT_2);
-
-	/* Call the callback function */
-	if (rpdl_SCI_TX_End_callback_func[0] != PDL_NO_FUNC)
-	{
-		rpdl_SCI_TX_End_callback_func[0]();
-	}
-}
 
 #if FAST_INTC_VECTOR == VECT_SCI1_TEI1
 #pragma interrupt Interrupt_SCI1_TEI1(vect=VECT_SCI1_TEI1, fint)
@@ -1198,20 +891,4 @@ void Interrupt_SCI5_TEI5(void)
 	}
 }
 
-#if FAST_INTC_VECTOR == VECT_SCI6_TEI6
-#pragma interrupt Interrupt_SCI6_TEI6(vect=VECT_SCI6_TEI6, fint)
-#else
-#pragma interrupt Interrupt_SCI6_TEI6(vect=VECT_SCI6_TEI6)
-#endif
-void Interrupt_SCI6_TEI6(void)
-{
-	/* Disable interrupt request generation, and try to disable transmission */
-	SCI6.SCR.BYTE &= (uint8_t)(INV_BIT_7 & INV_BIT_5 & INV_BIT_2);
-
-	/* Call the callback function */
-	if (rpdl_SCI_TX_End_callback_func[6] != PDL_NO_FUNC)
-	{
-		rpdl_SCI_TX_End_callback_func[6]();
-	}
-}
 /* End of file */

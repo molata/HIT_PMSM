@@ -16,14 +16,22 @@ void HIT_hardwaresetup()
 void SCI_setup()    //初始化SCI
 {
 	R_PG_SCI_Set_C0();
-	SCI0.SCR.BYTE = SCI0.SCR.BYTE & 0XCF;
-	SCI0.SCR.BYTE = SCI0.SCR.BYTE | 0X30;
+	SCI0.SCR.BYTE = SCI0.SCR.BYTE & 0XCF;               // 同时关闭TE和RE
+	SCI0.SCR.BYTE = SCI0.SCR.BYTE | 0X30;               // 同时打开TE和RE
+	SCI0.SCR.BIT.RIE = 0X01;   
+	ICU.IER[0x1A].BIT.IEN7 = 1;                         // allow ICU0 rxi interrupt              
+	ICU.IER[0x1B].BIT.IEN0 = 1;                         // allow ICU0 rxi interrupt 
+	ICU.IER[0x1B].BIT.IEN1 = 1;                         // allow ICU0 rxi interrupt 
 	
 	R_PG_SCI_Set_C5();
 	
 	R_PG_SCI_Set_C6();   
-	SCI6.SCR.BYTE = SCI6.SCR.BYTE & 0XCF;
-	SCI6.SCR.BYTE = SCI6.SCR.BYTE | 0X30;
+	SCI6.SCR.BYTE = SCI6.SCR.BYTE & 0XCF;              // 同时关闭TE和RE
+	SCI6.SCR.BYTE = SCI6.SCR.BYTE | 0X30;              // 同时打开TE和RE
+	SCI6.SCR.BIT.RIE = 0X01; 
+	ICU.IER[0x1D].BIT.IEN7 = 1;                         // allow ICU0 rxi interrupt  
+	ICU.IER[0x1E].BIT.IEN0 = 1;                         // allow TXI rxi interrupt  
+	ICU.IER[0x1E].BIT.IEN1 = 1;                         // allow TEIE rxi interrupt  
 }
 void Clock_setup()   //初始化时钟
 {

@@ -36,7 +36,7 @@
 * Description  : 
 * Limitations  : 
 ******************************************************************************
-* History : 22.05.2016 Version Description
+* History : 23.05.2016 Version Description
 *         :   
 ******************************************************************************/
 
@@ -74,7 +74,7 @@ bool R_PG_RSPI_Set_C1(void)
 		PDL_SCI_MODE_SYNC_MASTER | PDL_SPI_FULL_DUPLEX | PDL_SPI_PIN_CMOS | PDL_SPI_PIN_A | PDL_SPI_PIN_RSPCK_ENABLE | PDL_SPI_PIN_MOSI_ENABLE | PDL_SPI_PIN_MISO_ENABLE | PDL_SPI_PIN_SSL0_DISABLE | PDL_SPI_PIN_SSL1_DISABLE | PDL_SPI_PIN_SSL2_DISABLE | PDL_SPI_PIN_SSL3_DISABLE | PDL_SPI_PIN_MOSI_IDLE_HIGH,
 		PDL_SPI_BUFFER_64 | PDL_SPI_FRAME_1_1 | PDL_SPI_PARITY_NONE,
 		PDL_SPI_CLOCK_DELAY_1 | PDL_SPI_SSL_DELAY_1 | PDL_SPI_NEXT_DELAY_1,
-		0x17 | 0x80000000
+		0xef | 0x80000000
 	);
 }
 

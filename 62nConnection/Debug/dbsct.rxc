@@ -6,7 +6,7 @@
 -include="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62NPDG\i_src"
 -include="E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG"
 -include="E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62NPDG\i_src"
--output=obj="E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\Debug\dbsct.obj"
+-output=obj="E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\Debug\dbsct.obj"
 -debug
-"E:\实验室资料\实验室项目\207项目\主控板调试\62Nsource\62nConnection\dbsct.c"
+"E:\实验室资料\实验室项目\207项目\主控板调试\62N\62nConnection\dbsct.c"
 -nologo

@@ -58,7 +58,7 @@ void Sci6ReFunc()
 void Sci6TrFunc()
 {
 }
-void Sci6ErFunc()
+void Sci6ErFunc()                            // 串口错误处理
 {
 	if(SCI6.SSR.BIT.FER)
 	{
@@ -79,9 +79,9 @@ void Sci5TrFunc()
 /****************** 上位机接收的解析扫描 *****************/
 void serial_loop()
 {     
-	switch(ucSerial_send_status)           //串口发送
+	switch(ucSerial_send_status)                                                                             //串口发送
 	{         
-		case 0:                            //IDLE state
+		case 0:                                                                                              //IDLE state
 				break;     
 				       
 		case 1:	  // shake with upper machine
@@ -103,9 +103,9 @@ void serial_loop()
 		case 2:   // connection work 
 				if (ucShake_success)
 				{
-					u32Package_count++;
-					stSerial_data.package_count = u32Package_count;
-					ucSerial_Send_Bytes_Len = 22;
+					u32Package_count++;                                                       // package++
+					stSerial_data.package_count = u32Package_count;                           // 
+					ucSerial_Send_Bytes_Len = 22;                                            // 发送长度22
 					serial_encode(stSerial_data, ucSerial_send_dataBits);                    // 将当前的内部数据状态结构体，转换成数组
 					serial_build_protocol(ucSerial_send_dataBits, ucSerial_send_bytes, ucSerial_Send_Bytes_Len);  // 
 					serial_send(ucSerial_send_bytes, ucSerial_Send_Bytes_Len+4);             // 向上位机发送当前指令

@@ -31,19 +31,19 @@ void Cmt0IntFunc()   // 10us
 {
 	
 	/********************** 62TA发送指令 **************************/
-	uc62TA_IO_Value = PORT5.PORT.BIT.B4;              // 检测外部触发
-	if(uc62TA_IO_Value != uc62TA_IO_history && uc62TA_IO_Value == 0x01)
+	uc62TA_IO_Value = PORT5.PORT.BIT.B4;                                       // 检测外部触发
+	if(uc62TA_IO_Value != uc62TA_IO_history && uc62TA_IO_Value == 0x01)        // 软件检测上升沿有效
 	{
-		ucSPI_sendTA = 1;
+		ucSPI_sendTA = 1;                                                         
 		
 	}
-	if(uc62TA_IO_Value != uc62TA_IO_history)
+	if(uc62TA_IO_Value != uc62TA_IO_history)                            
 	{
-		uc62TA_IO_history = uc62TA_IO_Value;	
+		uc62TA_IO_history = uc62TA_IO_Value;	                               // 更新已有的数据
 	}
 
 	/********************** 62TB发送指令 **************************/
-	uc62TB_IO_Value = PORTA.PORT.BIT.B0;
+	uc62TB_IO_Value = PORTA.PORT.BIT.B0;                                       
 	if(uc62TB_IO_Value != uc62TB_IO_history && uc62TB_IO_Value == 0x01)
 	{
 		ucSPI_sendTB = 1;

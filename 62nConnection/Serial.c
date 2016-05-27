@@ -130,30 +130,39 @@ void laser_loop()
 	else if(ucLaser_success == 1)   // 自检通过
 	{
 		laser_time_count++;
-		if(laser_time_count > 100 )    //10ms发送一次
+		if(	st_pc_cmd.ucCapture == 0xFF)     //两种情况下
 		{
-			if(laser_bind_count <= 1)  // 装订状态
+			if(laser_time_count > 100 )    //10ms发送一次装订信息，一共发送两次装订
 			{
-				st_pc_cmd.ucCapture = 0XFF;
-				st_pc_cmd.ucMod_type = 0x01;
-				ucLaser_send_status = 2;  // 发送装订
-				laser_bind_count++;
-				laser_time_count = 0;
-			}
-			else if(laser_bind_count >= 2 && laser_bind_count < 5)
-			{
-				st_pc_cmd.ucCapture = 0X55;
-				st_pc_cmd.ucMod_type = 0x01;
-				ucLaser_send_status = 2;  // 发送捕获
-				laser_bind_count++;
-				laser_time_count = 0;
-			}
-			else
-			{
-				laser_bind_count = 100;	
-			}
+				if(laser_bind_count <= 1)  // 装订状态
+				{
+					/**I                               // 使用上位机的指令
+					st_pc_cmd.ucCapture = 0XFF;
+					st_pc_cmd.ucMod_type = 0x01;
+					***/
+					ucLaser_send_status = 2;  // 发送装订
+					laser_bind_count++;
+					laser_time_count = 0;
+				}
+				/***
+				else if(laser_bind_count >= 2 && laser_bind_count < 5)   // 捕获的信息改成实时发送
+				{
+					
+					st_pc_cmd.ucCapture = 0X55;
+					st_pc_cmd.ucMod_type = 0x01;
+					
+					ucLaser_send_status = 2;  // 发送捕获
+					laser_bind_count++;
+					laser_time_count = 0;
+				}
+				else
+				{
+					laser_bind_count = 100;	
+				}
+				****/
 			
-		}	
+			}	
+		}
 	}
 	switch(ucLaser_send_status)          
 	{
@@ -449,7 +458,15 @@ void serial_decode_byte(const uchar ucCurrent_byte, ST_SERIAL_DECODE *stSerial_d
 						st_pc_cmd.fpSailDeg = ((float)(stSerial_decode->ucSerial_dataBits[2] + stSerial_decode->ucSerial_dataBits[3] * 256 - 1750))/100;
 						st_pc_cmd.ucCapture = stSerial_decode->ucSerial_dataBits[4];
 						st_pc_cmd.ucMod_type = stSerial_decode->ucSerial_dataBits[5];
+						/***** 回复电机的角度信息 ****/
 						ucSerial_send_status = 2;    // 其他的工作放在外面去做，比如像两个62T发送电机指令
+						
+						/***** 发送捕获的信息 ******/
+						if(st_pc_cmd.ucCapture == 0x55)
+						{
+							ucLaser_send_status = 2;  // 发送捕获	
+						}
+						
 					}
 				}
 				else if (ucMac_type == 1)
